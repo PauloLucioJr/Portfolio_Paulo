@@ -1,0 +1,909 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+
+:root {        /* Utilizamos o Root para declarar as variáveis. Aqui nesse casode forma Global, o seja altera em todos os blocos body, o header e etc */
+    --cor-primaria: rgb(0, 81, 82);  
+    --cor-secundaria: rgb(255, 255, 255);
+    --cor-terciaria: #99654A;
+    --cor-selecao: #82563f;
+
+    --fonte-primaria: 'Oswald', sans-serif;
+    --fonte-secundaria: 'Sofia Sans Semi Condensed', sans-serif;
+}
+
+*{                /* Através do (*) eu faço uma seleção geral de todo conteúdo da página */
+    margin: 0px;  /* Aqui eu zero todas as minhas margens externas da página */
+    padding: 0;   /* Aqui eu zero todas as minhas margens internas da página */
+}
+
+body {
+    /* height: 100vh;  Significa altura da página (body) e 100vh é 100% de do meta name do arquivo Html */
+    box-sizing: border-box;  /* Box-Sizing - Tamanho da caixa / Border-box - (caixa de borda) - Respeita a regra estabelecida do valor de Border e Padding não ultrapassando */
+    background-color: black; /* Cor de Fundo da página */
+}
+
+
+
+.cabecalho {
+    display: flex;
+    background-color: var(--cor-primaria);   /* Cor de Fundo - Cabeçalho - Utilizando a Variável */
+    padding: 18px;                          /* Margem Interna - Cabeçalho */
+    align-items: center;                    /* alinhar todas os nomes ao centro */
+    justify-content: space-around;                /* pega os menus e alinha ao centro da tela */
+}
+
+
+a {                                      /* Estilização das Palavras do Menu */
+    color: rgb(255, 255, 255);                     /* Cor - Fonte Cabeçalho */
+    font-family: 'Oswald', sans-serif;                 /* Estilo - Fonte Cabeçalho */
+    text-decoration: none;                           /* Usado para tirar o sublinhado que ficou depois de lincar as páginas */
+    font-size: 1.5rem;                                 /* Tamanho da Fonte */
+    font-weight: 600;                                /* Maior o número, mais negrito a letra */
+
+}
+
+a:hover {               /* a(significa do menu) Muda a cor do menu quando passa o mouse */
+    color: var(--cor-selecao);    
+}
+
+
+.lista-menu {             
+    display: flex;
+    list-style: none;             /* tira as bolinhas de lista dos nomes */
+              /* tira o sublinhado lista dos nomes */
+    justify-content: center;
+    gap: 14rem;
+}
+
+.lista-menu a {           /* Dar um padding em cada item no menu, para facilitar a pessoa nahorade clicar no celular */
+    display: block;
+    
+}
+
+.botao-mobile {
+    display: none;            /* None (faz o elemento desaparecer) esconde o elemento no Desktop */
+    border: none;  
+    background: none;
+    border-top: 3px solid #82563f;
+    padding: 2.rem;
+}
+
+.botao-mobile::before,
+.botao-mobile::after {
+    content: " ";
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #82563f;
+    margin-top: 5px;
+    position: relative;
+    transition: 0.3s;
+}
+
+
+
+
+
+
+
+
+
+.descritivo-portefoleo {  /* Elemento Pai - Container principal*/
+    display: flex;           /* transforma o Main em um Container (caixa) assim facilitando no direcionamento das Divs*/
+    justify-content: center; /* informar qual será a posição dos elementos da caixa, no caso vão ficar posicionados em coluna*/
+    padding: 7%;
+}
+
+                                        /* PÁGINA CORPO HOME */
+.apresentacao_imagem_cargo {
+    display: flex;   
+    flex-direction: column;              
+    align-items: center;
+}
+
+.img-perfil {                     
+    width: 50%;             /* tamanho da imagem */
+    padding: 0% 0% 8% 0%;        /* Margem Int. – 1° cima / 2° direita / 3° baixo / 4° esquerda */ 
+    animation: fadeIn 3s ease-in-out;        /* fadeIn (lincando com a animação) 2s (duração da animação) */
+}
+
+@keyframes fadeIn {       /* animação imagem de perfil */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+h1 {
+    text-align: center;                                      /* alinhamento do texto */
+    color:white;                                          /* Cor da Fonte */
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;  /* Nome da Fonte */
+    font-size: 5.5rem;                                      /* Tamanho da Fonte */
+    font-weight: 700;                                    /* Largura da Fonte */
+}
+
+.cargos {
+    color:#99654A;  /* Cor da Fonte */
+    font-family: 'Oswald', sans-serif;  /* Nome da Fonte */
+    font-size: 3rem;   /* Tamanho da Fonte */
+    font-weight: 600;  /* Largura da Fonte */
+}
+
+.img-para-portifolio {
+    display: flex; 
+    flex-direction: row;                   /* direção dos itens: linha */ 
+    align-items: center;                  /* alinhamento dos itens do conteiner */ 
+    justify-content: center;  
+}
+
+.img-linkedin, .img-guithub {                   
+    width: 6vh;                                  /* tamanho da imagem */
+    padding: 24px 10px 0px 20px;     /* Margem Int. – 1° cima / 2° direita / 3° baixo / 4° esquerda */ 
+}
+
+.img-para-portifolio {
+    gap: 20px;
+       
+}
+.img-para-portifolio a:hover {
+    transform: scale(1.3);
+    transition-duration: 0.5s;   
+}
+
+                                       
+                                     /* PÁGINA SOBRE MIM */
+
+.corpo_conteudo_sobre_mim {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10%;    
+}
+
+.titulo_sobre_mim {
+    color: var(--cor-terciaria);
+    font-family: var(--fonte-primaria); 
+    font-size: 3rem; 
+    text-align: left;
+    padding: 0% 0% 4% 0%;    
+}
+
+.texto_sobre_mim {
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-primaria); 
+    font-size: 1.5rem; 
+    text-align: justify;           /* Alinhamento do texto - Justificado */
+    padding: 0% 22% 0% 0%;    
+}
+
+.imagem_sobre_mim {
+    width: 63vh;
+}
+
+
+
+                                             /* PÁGINA RESUMO */
+                                  
+.corpo_conteudo_habilidades {
+    padding: 10%
+}
+
+h2 {
+    text-align: center;                   /* Alinhamento do Texto */ 
+    color:white;                       /* Cor da Fonte */
+    font-family: 'Oswald', sans-serif;  /* Nome da Fonte */
+    font-size: 2.5rem;                   /* Tamanho da Fonte */
+}
+
+
+.img-habilidade-cima {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5%;
+    gap: 20%;
+}
+
+.img-habilidade-baixo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5%;
+    gap: 20%;
+}
+
+.img-HTML, .img-CSS, .img-Lightroom, .img-Photoshop, .img-Canva {
+    width: 16vh;
+}
+
+.divisao-horiontal-verde {
+    background-color: rgb(0, 81, 82);
+    padding: 6px;   
+    border: none;
+}
+
+                                       /* PARTE EXPERIENCIA */
+
+.titulo-experiencia {
+    padding: 8%;
+}
+
+h4 {    
+    color:white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+}
+
+h3 {
+    color:white;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5rem;
+    margin: 0px 80px 40px 0px;        /* Margem Ext. – 1° cima / 2° direita / 3° baixo / 4° esquerda */ 
+}
+
+.apresentacao_experiencia_educacao {
+   display: flex; 
+   justify-content: space-around;         
+   padding: 0% 0% 4% 0%;                    /* Margem Int. – 1° cima / 2° direita / 3° baixo / 4° esquerda */ 
+}
+
+.imagens-experiencia-direita, .imagems-educação_esquerda, .divisao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;             /* alinhamento do conteúdo: centro */ 
+    align-self: center;
+    gap: 68px;
+    /*outline: 2px solid violet; */
+} 
+
+.descritivo-experiencia, .descritivo-educação {
+    display: flex;
+    flex-direction: column;
+    gap: 220px;
+ /*   outline: 2px solid rgb(189, 102, 30); */
+    align-self: center;
+}
+
+
+
+
+
+.divisao-verde {
+    background-color: #0C7979;
+    padding: 40px 2px;
+    margin: 0px 80px 0px 130px;    /* Margem Ext. – 1° cima / 2° direita / 3° baixo / 4° esquerda */
+}
+
+.hr {    
+    animation: scale-down linear both;
+    animation-timeline: view(block);
+    animation-range: contain 100% exit 50%;
+  }
+
+.divisao-horiontal-verde, .linha-horizontal {
+   animation: efeito-linha 3s ease-in-out;
+   animation-timeline: view();
+   animation-range: entry 5% cover 50%;    /* entry 10% (Linha começa aparecer em 10%) cover 40% (em que parte da tela vai ficar totlamente visivel, ou seja 40% tela vai ficar visivel */
+   
+  }
+  
+ 
+@keyframes efeito-linha {
+   from { opacity: 0;
+    clip-path: inset(0% 70% 0% 70%);
+    transition: 1s;
+    
+   }
+    to {
+        opacity: 1;
+        clip-path: inset(0% 0% 0% 0%);  
+       
+   }
+
+}
+
+.divisao-verde {
+    animation: efeito-linha-verde 1s;
+    animation-timeline: view();
+}
+
+
+@keyframes efeito-linha-verde {
+    from { opacity: 0;
+     clip-path: inset(0% 0% 70% 0%);
+     
+    }
+     to {
+         opacity: 1;
+         clip-path: inset(0% 0% 0% 0%);
+     
+    }
+ 
+ }
+
+
+ .linha-horizontal {
+    background-color: #0C7979;
+    padding: 5px 0px;
+    margin: 0px 0px 0px 0px;    /* Margem Ext. – 1° cima / 2° direita / 3° baixo / 4° esquerda */
+    border-color: #0C7979;
+ }
+
+
+
+
+
+.chapeu_formatura_1, .chapeu_formatura_2, .chapeu_formatura_3 {
+    width: 10vh;
+    float: left;
+    margin: 0px 0px 30px 50px;             /* Margem Ext. – 1° cima / 2° direita / 3° baixo / 4° esquerda */
+}
+
+.seta_carreira_1, .seta_carreira_2, .seta_carreira_3 {
+    width: 8vh;
+    float: left;
+    margin: 0px 20px 30px 60px; 
+}
+
+
+    
+
+
+
+
+
+
+                                 /* PARTE PORTFOLIO */
+.container_portfolio {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;           /* altura minima exigida para cada tela, ou seja, 100% preenchido */
+}
+                                
+.main-portfolio {
+    flex: 1;                   /* estrutura para manter o Footer sempre abaixo na tela */
+}
+
+.apresentacao-portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-top: 64px;
+}
+
+.img-portfolio {
+    width: 360px;
+    height: 460px;
+    background-size: cover;      /* cover: faz com que a img de background se adapte ao tamanho da div  */
+    border-radius: 16px;
+    cursor: pointer;          /* seta do mouse vira uma mãozinha quando passar por cima do elemento  */
+    position: relative;
+    margin-top: 16px;
+}                              
+
+.efeito-sobrepor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000d8;
+    border-radius: 16px;
+    font-size: 32px;
+    font-weight: 600;
+    color:var(--cor-selecao);
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    opacity: 0;                    /* opacidade 0, para depois que o mouse passar por cima voltar a 1  */
+    transition: .5s;               /* transição da opacidade de 0 para 1  */
+}
+
+.efeito-sobrepor:hover {
+    opacity: 1;
+}
+
+.rodape {
+    color: var(--cor-secundaria);      /* Cor da Fonte */   
+    background-color: rgb(0, 81, 82);  /* Cor de Fundo */
+    padding: 18px;                        /* Margem Interna */  
+    text-align: center;                   /* Texto Centralizado */
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;  /* Fonte da Letra */
+}
+
+
+
+
+
+
+
+
+
+                                            /* PARTE CONTATO */
+
+
+                                            
+/* área de contatos */
+
+.container_contato {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;           /* altura minima exigida para cada tela, ou seja, 100% preenchido */
+}
+
+.corpo-contato {
+    flex: 1;                   /* estrutura para manter o Footer sempre abaixo na tela */
+   
+}
+
+.apresentacao-contato {
+    display: flex;     
+    outline: 2px solid rgb(128, 15, 0);
+    justify-content: space-evenly;
+    margin-top: 8%;
+}
+
+
+
+.contato {
+    color: var(--cor-terciaria);
+    font-size: var(--fonte-primaria);
+    font-size: 1.8rem;                                      /* Tamanho da Fonte */
+    font-weight: 750;
+    padding-top: -3%;
+}                                            
+
+.area-contatos {   
+    outline: 2px solid green;    /*cor da borda da div */
+    
+    
+}    
+
+
+
+.dados-contato {
+    color: var(--cor-secundaria);
+    font-size: var(--fonte-secundaria);
+    font-size: 1rem;                                   /* Tamanho da Fonte */
+}     
+
+.img_redes_contato {
+    display: flex;
+    justify-content: center;
+    outline: 2px solid rgb(128, 51, 0); 
+    
+}
+
+.img-linkedin, .img-guithub {
+    width: 4vh;    
+    padding: 8px;
+    
+}
+
+.img_emal, .img_fone, .img_local {
+    width: 4vh; 
+}
+
+.img_texto {    
+    display: flex;
+    align-items: center;
+    outline: 2px solid rgb(2, 0, 128); 
+    gap: 12px;
+    margin-bottom: 8%;
+    padding: 0px 20px 0px 10px;
+}
+
+
+
+
+/* área do formulário */
+                                                                                 
+form {
+    display: flex;
+    max-width: 500px;
+    flex-direction: column;
+    justify-content: center;    
+    gap: 24px;
+}
+
+form input, form textarea {      
+    background-color: #0000;
+    border: 0;
+    outline: 2px solid var(--cor-terciaria);
+    border-radius: 8px;
+    padding: 6px 100px;
+    color: var(--cor-secundaria);    /* cor do texto que vai ser digitado */    
+}
+
+form input::placeholder {
+    color: var(--cor-secundaria);    /* cor do texto que vai ser digitado */
+}
+
+form textarea {    /* mexer no tamanho da textarea */
+    resize: none;          /* tira a opção de ficar alterando o tamanho da textarea */
+    padding: 24% 0;         /* borada interna textarea */
+}
+
+form .botao-enviar input{     /* estilo botão enviar */
+    width: 50%;
+    padding: 4%; 
+    background-color: var(--cor-terciaria);
+    outline: 3px solid var(--cor-selecao);
+    margin-top: 2%;
+    cursor: pointer;
+    font-weight: 700;         /* largura das letras */    
+}
+
+
+.botao-enviar input:hover {        /* quando passar o mouse ativa o sombreamento */
+    box-shadow: 0px 0px 18px var(--cor-selecao);
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                /* RESPONSIVIDADE */  
+
+
+   /* Desktop */                                              
+@media screen and (max-width: 1024px) {
+
+                                           /* HOME */
+    .descritivo-portefoleo {
+      padding: 12% 0% 12% 0%;
+    }
+    .lista-menu {
+      gap: 80px;        /* diminuindo o espaçamento entre os menus, para caber na tela */
+    }
+
+                                            /* SOBRE MIM */
+    .imagem_sobre_mim {
+        width: 48vh;
+        padding: 0% 2% 0% 2%; 
+    }
+    .titulo_sobre_mim {
+        font-size: 2rem; 
+        padding: 0% 0% 4% 10%;
+    }
+    .texto_sobre_mim {
+        font-size: 1.2rem; 
+        padding: 0% 0% 0% 10%;   
+    }
+    .corpo_conteudo_sobre_mim {
+        padding: 18% 0% 18% 0%;            /* Margem Int. – 1° cima / 2° direita / 3° baixo / 4° esquerda */ 
+    }
+
+                                             /* RESUMO */
+
+    
+    h3 {
+        font-size: 1.2rem;
+        margin: 0px 16px 100px 0px;        /* Margem Ext. – 1° cima / 2° direita / 3° baixo / 4° esquerda */       
+    }
+    .descritivo-experiencia, .descritivo-educação {
+        gap: 140px;  
+        padding-top: 5%;      
+    }
+    .divisao-verde {
+        background-color: #0C7979;
+        padding: 38px 2px;
+        margin: 0px 80px 0px 130px;    /* Margem Ext. – 1° cima / 2° direita / 3° baixo / 4° esquerda */
+    }
+
+
+}
+
+
+
+
+
+/* Tablets */ 
+@media screen and (max-width: 768px) {
+    
+                                              /* HOME */
+                                                
+
+.cabecalho {
+margin: 0px;
+padding: 50px;
+
+}
+
+.lista-menu {
+    gap: 120px;                       /* adiciona espaços iguais entre cada item */
+    flex-wrap: wrap;
+    margin: 0px;
+    padding: 0px;
+justify-content:space-around;
+
+}
+                                            
+
+    
+                                           /* SOBRE MIM */
+
+.corpo_conteudo_sobre_mim {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 5%;
+    justify-content: center;
+    gap: 40px;  
+    margin: 8% 0%;          /* Margem Ext. – 1° cima e baixo / 2° direita e esquerda */                                      
+}
+.imagem_sobre_mim {
+    width: 42vh;
+    padding: 0% 0% 0% 2%; 
+}
+.titulo_sobre_mim {
+    font-size: 2rem; 
+    text-align: center;    
+    padding: 0% 0% 4% 0%;        /* Margem Int. – 1° cima / 2° direita / 3° baixo / 4° esquerda */ 
+}
+.texto_sobre_mim {
+    font-size: 1.2rem; 
+    padding: 0% 0% 0% 0%;   
+}
+
+
+
+                                         /* RESUMO */
+
+h2 {
+    font-size: 2rem;                   /* Tamanho da Fonte */
+    padding: 0% 0% 4% 0%;
+}
+.img-HTML, .img-CSS, .img-Lightroom, .img-Photoshop, .img-Canva {
+    width: 12vh;
+}
+h4 {    
+    font-size: 0.8rem;
+}
+h3 {
+    font-size: 1rem;
+    margin: 0px;        /* Margem Ext. – 1° cima / 2° direita / 3° baixo / 4° esquerda */ 
+}
+.titulo-experiencia {
+    margin: 4% 0% 0% 0%;
+}
+.apresentacao_experiencia_educacao {
+    padding: 0% 0% 16% 0%;                     /* Margem Int. – 1° cima / 2° direita / 3° baixo / 4° esquerda */ 
+}
+.imagens-experiencia-direita, .imagems-educação_esquerda, .divisao {
+    gap: 40px;
+} 
+.descritivo-experiencia, .descritivo-educação {
+    gap: 140px;
+    letter-spacing: 1px;
+    padding-bottom: 6%;
+}
+.divisao-verde {
+    margin: 0px 60px;    /* Margem Ext. – 1° cima / 2° direita / 3° baixo / 4° esquerda */
+}
+.chapeu_formatura_1, .chapeu_formatura_2, .chapeu_formatura_3 {
+    width: 8vh;
+    margin: 3% 2% 0% 0%;             /* Margem Ext. – 1° cima / 2° direita / 3° baixo / 4° esquerda */
+}
+.seta_carreira_1, .seta_carreira_2, .seta_carreira_3 {
+    width: 7vh;
+    margin: 0% 2% 0% 0%; 
+}
+}
+
+
+
+/* CELULARES */  
+@media screen and (max-width: 480px) {         /* screen(tela) max-width(for abaixo) de 480px vai aplicar essas configurações */
+
+
+                                      /* HOME */
+
+
+.botao-mobile {
+    display: block;          /* Block (faz o elemento aparecer) O que estava escontido no Desktop aparece agora */
+    margin: 5px;            /* aumento da margem para facilitar o dedo na hora de clicar */       
+}
+
+.lista-menu {
+    display: block;             /* None (faz os elementos desaparecerem) Os nomes do menu desaparecem  */
+    position: absolute;                 /* o elemento ficará por cima de todos os outros  */
+    top: 80px;                           /* distancia entre o topo da lista de menu e o header  */
+    right: 0;
+    height: 0;            /* 100% vh (da altura da tela) - 80 do top para dar o preenchimento da tela sem sobras */
+    width: 100%;                      /* 100% (da tela) */
+    background-color: var(--cor-primaria);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition: .6s ease-out;
+    visibility: hidden;              /* os elementos vão começar na transição escondidos (hidden) */
+    overflow-y: hidden;             /* os elementos no eixo Y vão começar escondidos (hidden) */
+}
+
+.nav.active .lista-menu {                /* classe que vai ser utiliada em JavaScript */
+    height: calc(100vh - 80px); 
+    visibility: visible;                /* os elementos depois da transição aparecem */
+    overflow-y: auto;                        /* caso o menu seja maior ele cria uma barra de scrow  */
+       
+}
+
+.lista-menu a {                     /* configuração nomes no menu  */
+   padding: 3rem;                   /* espaçamento interno de cada elemento  */
+   opacity: 0;
+   text-align: center;
+}
+
+.lista-menu li:nth-child(1) a {            /* transição suave para cada palavra da Lista de Menu */
+    transition: 0.5s 0.2s; 
+}
+.lista-menu li:nth-child(2) a {
+    transition: 0.5s 0.3s; 
+}
+.lista-menu li:nth-child(3) a {
+    transition: 0.5s 0.4s; 
+}
+.lista-menu li:nth-child(4) a {
+    transition: 0.5s 0.5s; 
+}
+.lista-menu li:nth-child(5) a {
+    transition: 0.5s 0.6s; 
+}
+
+.nav.active .lista-menu a {       /* Lista de Menu aparece novamente  */
+    opacity: 1;                    /* Visibilidade total */ 
+}
+
+.nav.active .botao-mobile {           
+    position:static;
+    border-top-color: transparent;        /* na hora que ocorrer a animação do hamburguer o tracinho de cima some */
+}
+
+.nav.active .botao-mobile::before {      /* 2° traço do hamburger vai rotacionar 135graus */
+transform: rotate(135deg);
+}
+
+.nav.active .botao-mobile::after {
+    transform: rotate(-135deg);         /* 3° traço do hamburger vai rotacionar -135graus */
+    top: -7px;                          /* na hora que rotacionar o traço sobe para formar o X corretamente */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+.descritivo-portefoleo {
+    margin: 24% 0%;
+}
+
+h1{
+    font-size: 3.5rem;
+}
+.cargos {
+    font-size: 2rem;
+
+}
+
+
+ 
+
+                                        /* SOBRE MIM */
+
+.corpo_conteudo_sobre_mim {
+    padding: 0% 6%;
+    gap: 0px;  
+    margin: 12% 0%;          /* Margem Ext. – 1° cima e baixo / 2° direita e esquerda */                                      
+}
+.imagem_sobre_mim {
+    width: 34vh;
+    padding: 0% 0% 0% 0%; 
+}
+.titulo_sobre_mim {
+    font-size: 2rem; 
+    padding: 12% 0% 6% 0%;        /* Margem Int. – 1° cima / 2° direita / 3° baixo / 4° esquerda */ 
+}
+.texto_sobre_mim {
+    font-size: 1.2rem; 
+    padding: 0% 0% 0% 0%;   
+}
+.apresentacao-perfil {
+    margin: 0% 0%;
+}
+  
+
+
+                                        /* RESUMO */
+
+h2 {
+    font-size: 2rem;                   /* Tamanho da Fonte */
+    padding: 0% 0% 4% 0%;
+}
+.img-HTML, .img-CSS, .img-Lightroom, .img-Photoshop, .img-Canva {
+    width: 12vh;
+}
+h4 {    
+    font-size: 0.8rem;
+}
+.apresentacao_experiencia_educacao {
+   /* outline: 2px solid blue;  */
+    display: grid;
+    grid-template-columns: 15% 75%;
+    padding: 4% 0%;
+}                                        
+h3 {
+    font-size: 1.2rem;
+    /* outline: 2px solid violet; */
+}
+.imagens-experiencia-direita  {
+   /* outline: 2px solid grey;  */
+    gap: 30px;
+    padding-top: 0%;       
+}
+
+.imagems-educação_esquerda {
+    gap: 30px;
+    padding: 0% 0% 0% 0%; 
+    margin-top: 100%;
+} 
+
+.descritivo-educação {
+    margin-top: 16%;
+}
+
+.descritivo-experiencia, .descritivo-educação {
+    display: grid;
+    /*outline: 2px solid green;   cor da borda da div */
+    gap: 110px;
+}
+
+}
+
+                                        
+
+
+                                                                            
+                    
+
+
+
+                                
+
+                                    
+                                    
+                                    
+
+
+                                    
+                                        
+
+
+
+
+
