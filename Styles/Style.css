@@ -432,11 +432,11 @@ h3 {
 .container_contato {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;           
+    min-height: 100vh;           /* altura minima exigida para cada tela, ou seja, 100% preenchido */
 }
 
 .corpo-contato {
-    flex: 1;                  
+    flex: 1;                   /* estrutura para manter o Footer sempre abaixo na tela */
    
 }
 
@@ -452,16 +452,23 @@ h3 {
 .contato {
     color: var(--cor-terciaria);
     font-size: var(--fonte-primaria);
-    font-size: 1.8rem;                                      
+    font-size: 1.8rem;                                      /* Tamanho da Fonte */
     font-weight: 750;
     padding-top: -3%;
 }                                            
+
+.area-contatos {   
+    outline: 2px solid green;    /*cor da borda da div */
+    
+    
+}    
+
 
 
 .dados-contato {
     color: var(--cor-secundaria);
     font-size: var(--fonte-secundaria);
-    font-size: 1rem;                                   
+    font-size: 1rem;                                   /* Tamanho da Fonte */
 }     
 
 .img_redes_contato {
@@ -505,33 +512,34 @@ form {
 
 form input, form textarea {      
     background-color: #0000;
-    border: 0;    
+    border: 0;
+    outline: 2px solid var(--cor-terciaria);
     border-radius: 8px;
     padding: 6px 100px;
-    color: var(--cor-secundaria);    
+    color: var(--cor-secundaria);    /* cor do texto que vai ser digitado */    
 }
 
 form input::placeholder {
-    color: var(--cor-secundaria);    
+    color: var(--cor-secundaria);    /* cor do texto que vai ser digitado */
 }
 
-form textarea {    
-    resize: none;         
-    padding: 24% 0;         
+form textarea {    /* mexer no tamanho da textarea */
+    resize: none;          /* tira a opção de ficar alterando o tamanho da textarea */
+    padding: 24% 0;         /* borada interna textarea */
 }
 
-form .botao-enviar input{     
+form .botao-enviar input{     /* estilo botão enviar */
     width: 50%;
     padding: 4%; 
     background-color: var(--cor-terciaria);
     outline: 3px solid var(--cor-selecao);
     margin-top: 2%;
     cursor: pointer;
-    font-weight: 700;         
+    font-weight: 700;         /* largura das letras */    
 }
 
 
-.botao-enviar input:hover {        
+.botao-enviar input:hover {        /* quando passar o mouse ativa o sombreamento */
     box-shadow: 0px 0px 18px var(--cor-selecao);
     transform: scale(1.05);
 }
