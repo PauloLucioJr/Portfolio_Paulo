@@ -17,50 +17,49 @@
 
 body {
     /* height: 100vh;  Significa altura da página (body) e 100vh é 100% de do meta name do arquivo Html */
-    box-sizing: border-box;  /* Box-Sizing - Tamanho da caixa / Border-box - (caixa de borda) - Respeita a regra estabelecida do valor de Border e Padding não ultrapassando */
-    background-color: black; /* Cor de Fundo da página */
+    box-sizing: border-box;  
+    background-color: black; 
 }
 
 
 
 .cabecalho {
     display: flex;
-    background-color: var(--cor-primaria);   /* Cor de Fundo - Cabeçalho - Utilizando a Variável */
-    padding: 18px;                          /* Margem Interna - Cabeçalho */
-    align-items: center;                    /* alinhar todas os nomes ao centro */
-    justify-content: space-around;                /* pega os menus e alinha ao centro da tela */
+    background-color: var(--cor-primaria);   
+    padding: 18px;                          
+    align-items: center;                    
+    justify-content: space-around;                
 }
 
 
 a {                                      /* Estilização das Palavras do Menu */
-    color: rgb(255, 255, 255);                     /* Cor - Fonte Cabeçalho */
-    font-family: 'Oswald', sans-serif;                 /* Estilo - Fonte Cabeçalho */
-    text-decoration: none;                           /* Usado para tirar o sublinhado que ficou depois de lincar as páginas */
-    font-size: 1.5rem;                                 /* Tamanho da Fonte */
-    font-weight: 600;                                /* Maior o número, mais negrito a letra */
+    color: rgb(255, 255, 255);                     
+    font-family: 'Oswald', sans-serif;                
+    text-decoration: none;                           
+    font-size: 1.5rem;                                 
+    font-weight: 600;                               
 
 }
 
-a:hover {               /* a(significa do menu) Muda a cor do menu quando passa o mouse */
+a:hover {               
     color: var(--cor-selecao);    
 }
 
 
 .lista-menu {             
     display: flex;
-    list-style: none;             /* tira as bolinhas de lista dos nomes */
-              /* tira o sublinhado lista dos nomes */
+    list-style: none;        
     justify-content: center;
     gap: 14rem;
 }
 
-.lista-menu a {           /* Dar um padding em cada item no menu, para facilitar a pessoa nahorade clicar no celular */
+.lista-menu a {           
     display: block;
     
 }
 
 .botao-mobile {
-    display: none;            /* None (faz o elemento desaparecer) esconde o elemento no Desktop */
+    display: none;            
     border: none;  
     background: none;
     border-top: 3px solid #82563f;
@@ -88,8 +87,8 @@ a:hover {               /* a(significa do menu) Muda a cor do menu quando passa 
 
 
 .descritivo-portefoleo {  /* Elemento Pai - Container principal*/
-    display: flex;           /* transforma o Main em um Container (caixa) assim facilitando no direcionamento das Divs*/
-    justify-content: center; /* informar qual será a posição dos elementos da caixa, no caso vão ficar posicionados em coluna*/
+    display: flex;           
+    justify-content: center; 
     padding: 7%;
 }
 
@@ -101,9 +100,9 @@ a:hover {               /* a(significa do menu) Muda a cor do menu quando passa 
 }
 
 .img-perfil {                     
-    width: 50%;             /* tamanho da imagem */
-    padding: 0% 0% 8% 0%;        /* Margem Int. – 1° cima / 2° direita / 3° baixo / 4° esquerda */ 
-    animation: fadeIn 3s ease-in-out;        /* fadeIn (lincando com a animação) 2s (duração da animação) */
+    width: 50%;             
+    padding: 0% 0% 8% 0%;       
+    animation: fadeIn 3s ease-in-out;        
 }
 
 @keyframes fadeIn {       /* animação imagem de perfil */
@@ -117,30 +116,30 @@ a:hover {               /* a(significa do menu) Muda a cor do menu quando passa 
 
 
 h1 {
-    text-align: center;                                      /* alinhamento do texto */
-    color:white;                                          /* Cor da Fonte */
-    font-family: 'Sofia Sans Semi Condensed', sans-serif;  /* Nome da Fonte */
-    font-size: 5.5rem;                                      /* Tamanho da Fonte */
-    font-weight: 700;                                    /* Largura da Fonte */
+    text-align: center;                                     
+    color:white;                                          
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;  
+    font-size: 5.5rem;                                      
+    font-weight: 700;                                   
 }
 
 .cargos {
-    color:#99654A;  /* Cor da Fonte */
-    font-family: 'Oswald', sans-serif;  /* Nome da Fonte */
-    font-size: 3rem;   /* Tamanho da Fonte */
-    font-weight: 600;  /* Largura da Fonte */
+    color:#99654A;  
+    font-family: 'Oswald', sans-serif; 
+    font-size: 3rem;   
+    font-weight: 600;  
 }
 
 .img-para-portifolio {
     display: flex; 
-    flex-direction: row;                   /* direção dos itens: linha */ 
-    align-items: center;                  /* alinhamento dos itens do conteiner */ 
+    flex-direction: row;                   
+    align-items: center;                 
     justify-content: center;  
 }
 
 .img-linkedin, .img-guithub {                   
-    width: 6vh;                                  /* tamanho da imagem */
-    padding: 24px 10px 0px 20px;     /* Margem Int. – 1° cima / 2° direita / 3° baixo / 4° esquerda */ 
+    width: 6vh;                                  
+    padding: 24px 10px 0px 20px;     
 }
 
 .img-para-portifolio {
@@ -176,7 +175,7 @@ h1 {
     color: var(--cor-secundaria);
     font-family: var(--fonte-primaria); 
     font-size: 1.5rem; 
-    text-align: justify;           /* Alinhamento do texto - Justificado */
+    text-align: justify;           
     padding: 0% 22% 0% 0%;    
 }
 
@@ -193,10 +192,10 @@ h1 {
 }
 
 h2 {
-    text-align: center;                   /* Alinhamento do Texto */ 
-    color:white;                       /* Cor da Fonte */
-    font-family: 'Oswald', sans-serif;  /* Nome da Fonte */
-    font-size: 2.5rem;                   /* Tamanho da Fonte */
+    text-align: center;                  
+    color:white;                       
+    font-family: 'Oswald', sans-serif;  
+    font-size: 2.5rem;                   
 }
 
 
@@ -242,29 +241,27 @@ h3 {
     color:white;
     font-family: 'Oswald', sans-serif;
     font-size: 1.5rem;
-    margin: 0px 80px 40px 0px;        /* Margem Ext. – 1° cima / 2° direita / 3° baixo / 4° esquerda */ 
+    margin: 0px 80px 40px 0px;        
 }
 
 .apresentacao_experiencia_educacao {
    display: flex; 
    justify-content: space-around;         
-   padding: 0% 0% 4% 0%;                    /* Margem Int. – 1° cima / 2° direita / 3° baixo / 4° esquerda */ 
+   padding: 0% 0% 4% 0%;                    
 }
 
 .imagens-experiencia-direita, .imagems-educação_esquerda, .divisao {
     display: flex;
     flex-direction: column;
-    align-items: center;             /* alinhamento do conteúdo: centro */ 
+    align-items: center;             
     align-self: center;
-    gap: 68px;
-    /*outline: 2px solid violet; */
+    gap: 68px;    
 } 
 
 .descritivo-experiencia, .descritivo-educação {
     display: flex;
     flex-direction: column;
     gap: 220px;
- /*   outline: 2px solid rgb(189, 102, 30); */
     align-self: center;
 }
 
@@ -275,7 +272,7 @@ h3 {
 .divisao-verde {
     background-color: #0C7979;
     padding: 40px 2px;
-    margin: 0px 80px 0px 130px;    /* Margem Ext. – 1° cima / 2° direita / 3° baixo / 4° esquerda */
+    margin: 0px 80px 0px 130px;    
 }
 
 .hr {    
@@ -287,7 +284,7 @@ h3 {
 .divisao-horiontal-verde, .linha-horizontal {
    animation: efeito-linha 3s ease-in-out;
    animation-timeline: view();
-   animation-range: entry 5% cover 50%;    /* entry 10% (Linha começa aparecer em 10%) cover 40% (em que parte da tela vai ficar totlamente visivel, ou seja 40% tela vai ficar visivel */
+   animation-range: entry 5% cover 50%;    
    
 }
   
@@ -329,7 +326,7 @@ h3 {
  .linha-horizontal {
     background-color: #0C7979;
     padding: 5px 0px;
-    margin: 0px 0px 0px 0px;    /* Margem Ext. – 1° cima / 2° direita / 3° baixo / 4° esquerda */
+    margin: 0px 0px 0px 0px;    
     border-color: #0C7979;
 }
 
@@ -340,7 +337,7 @@ h3 {
 .chapeu_formatura_1, .chapeu_formatura_2, .chapeu_formatura_3 {
     width: 10vh;
     float: left;
-    margin: 0px 0px 30px 50px;             /* Margem Ext. – 1° cima / 2° direita / 3° baixo / 4° esquerda */
+    margin: 0px 0px 30px 50px;            
 }
 
 .seta_carreira_1, .seta_carreira_2, .seta_carreira_3 {
@@ -361,11 +358,11 @@ h3 {
 .container_portfolio {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;           /* altura minima exigida para cada tela, ou seja, 100% preenchido */
+    min-height: 100vh;           
 }
                                 
 .main-portfolio {
-    flex: 1;                   /* estrutura para manter o Footer sempre abaixo na tela */
+    flex: 1;                   
 }
 
 .apresentacao-portfolio {
@@ -379,9 +376,9 @@ h3 {
 .img-portfolio {
     width: 360px;
     height: 460px;
-    background-size: cover;      /* cover: faz com que a img de background se adapte ao tamanho da div  */
+    background-size: cover;      
     border-radius: 16px;
-    cursor: pointer;          /* seta do mouse vira uma mãozinha quando passar por cima do elemento  */
+    cursor: pointer;          
     position: relative;
     margin-top: 16px;
 }                              
@@ -402,8 +399,8 @@ h3 {
     color:var(--cor-selecao);
     font-family: 'Oswald', sans-serif;
     text-align: center;
-    opacity: 0;                    /* opacidade 0, para depois que o mouse passar por cima voltar a 1  */
-    transition: .5s;               /* transição da opacidade de 0 para 1  */
+    opacity: 0;                   
+    transition: .5s;               
 }
 
 .efeito-sobrepor:hover {
@@ -411,11 +408,11 @@ h3 {
 }
 
 .rodape {
-    color: var(--cor-secundaria);      /* Cor da Fonte */   
-    background-color: rgb(0, 81, 82);  /* Cor de Fundo */
-    padding: 18px;                        /* Margem Interna */  
-    text-align: center;                   /* Texto Centralizado */
-    font-family: 'Sofia Sans Semi Condensed', sans-serif;  /* Fonte da Letra */
+    color: var(--cor-secundaria);     
+    background-color: rgb(0, 81, 82);  
+    padding: 18px;                        
+    text-align: center;                   
+    font-family: 'Sofia Sans Semi Condensed', sans-serif; 
 }
 
 
@@ -563,7 +560,7 @@ form .botao-enviar input{     /* estilo botão enviar */
       padding: 12% 0% 12% 0%;
     }
     .lista-menu {
-      gap: 80px;        /* diminuindo o espaçamento entre os menus, para caber na tela */
+      gap: 80px;        
     }
 
                                             /* SOBRE MIM */
@@ -580,7 +577,7 @@ form .botao-enviar input{     /* estilo botão enviar */
         padding: 0% 0% 0% 10%;   
     }
     .corpo_conteudo_sobre_mim {
-        padding: 18% 0% 18% 0%;            /* Margem Int. – 1° cima / 2° direita / 3° baixo / 4° esquerda */ 
+        padding: 18% 0% 18% 0%;           
     }
 
                                              /* RESUMO */
@@ -588,7 +585,7 @@ form .botao-enviar input{     /* estilo botão enviar */
     
     h3 {
         font-size: 1.2rem;
-        margin: 0px 16px 100px 0px;        /* Margem Ext. – 1° cima / 2° direita / 3° baixo / 4° esquerda */       
+        margin: 0px 16px 100px 0px;        
     }
     .descritivo-experiencia, .descritivo-educação {
         gap: 140px;  
@@ -597,7 +594,7 @@ form .botao-enviar input{     /* estilo botão enviar */
     .divisao-verde {
         background-color: #0C7979;
         padding: 38px 2px;
-        margin: 0px 80px 0px 130px;    /* Margem Ext. – 1° cima / 2° direita / 3° baixo / 4° esquerda */
+        margin: 0px 80px 0px 130px;    
     }
 
 
@@ -620,7 +617,7 @@ padding: 50px;
 }
 
 .lista-menu {
-    gap: 120px;                       /* adiciona espaços iguais entre cada item */
+    gap: 120px;                      
     flex-wrap: wrap;
     margin: 0px;
     padding: 0px;
@@ -638,7 +635,7 @@ justify-content:space-around;
     padding: 5%;
     justify-content: center;
     gap: 40px;  
-    margin: 8% 0%;          /* Margem Ext. – 1° cima e baixo / 2° direita e esquerda */                                      
+    margin: 8% 0%;                
 }
 .imagem_sobre_mim {
     width: 42vh;
@@ -647,7 +644,7 @@ justify-content:space-around;
 .titulo_sobre_mim {
     font-size: 2rem; 
     text-align: center;    
-    padding: 0% 0% 4% 0%;        /* Margem Int. – 1° cima / 2° direita / 3° baixo / 4° esquerda */ 
+    padding: 0% 0% 4% 0%;      
 }
 .texto_sobre_mim {
     font-size: 1.2rem; 
@@ -659,7 +656,7 @@ justify-content:space-around;
                                          /* RESUMO */
 
 h2 {
-    font-size: 2rem;                   /* Tamanho da Fonte */
+    font-size: 2rem;                  
     padding: 0% 0% 4% 0%;
 }
 .img-HTML, .img-CSS, .img-Lightroom, .img-Photoshop, .img-Canva {
@@ -670,13 +667,13 @@ h4 {
 }
 h3 {
     font-size: 1rem;
-    margin: 0px;        /* Margem Ext. – 1° cima / 2° direita / 3° baixo / 4° esquerda */ 
+    margin: 0px;        
 }
 .titulo-experiencia {
     margin: 4% 0% 0% 0%;
 }
 .apresentacao_experiencia_educacao {
-    padding: 0% 0% 16% 0%;                     /* Margem Int. – 1° cima / 2° direita / 3° baixo / 4° esquerda */ 
+    padding: 0% 0% 16% 0%;                     
 }
 .imagens-experiencia-direita, .imagems-educação_esquerda, .divisao {
     gap: 40px;
@@ -687,11 +684,11 @@ h3 {
     padding-bottom: 6%;
 }
 .divisao-verde {
-    margin: 0px 60px;    /* Margem Ext. – 1° cima / 2° direita / 3° baixo / 4° esquerda */
+    margin: 0px 60px;    
 }
 .chapeu_formatura_1, .chapeu_formatura_2, .chapeu_formatura_3 {
     width: 8vh;
-    margin: 3% 2% 0% 0%;             /* Margem Ext. – 1° cima / 2° direita / 3° baixo / 4° esquerda */
+    margin: 3% 2% 0% 0%;             
 }
 .seta_carreira_1, .seta_carreira_2, .seta_carreira_3 {
     width: 7vh;
@@ -705,22 +702,21 @@ h3 {
 @media screen and (max-width: 480px) {         /* screen(tela) max-width(for abaixo) de 480px vai aplicar essas configurações */
 
 
-
                                       /* HOME */
 
 
 .botao-mobile {
-    display: block;          /* Block (faz o elemento aparecer) O que estava escontido no Desktop aparece agora */
-    margin: 5px;            /* aumento da margem para facilitar o dedo na hora de clicar */       
+    display: block;          
+    margin: 5px;            
 }
 
 .lista-menu {
-    display: block;             /* None (faz os elementos desaparecerem) Os nomes do menu desaparecem  */
-    position: absolute;                 /* o elemento ficará por cima de todos os outros  */
-    top: 80px;                           /* distancia entre o topo da lista de menu e o header  */
+    display: block;             
+    position: absolute;                 
+    top: 80px;                          
     right: 0;
-    height: 0;            /* 100% vh (da altura da tela) - 80 do top para dar o preenchimento da tela sem sobras */
-    width: 100%;                      /* 100% (da tela) */
+    height: 0;          
+    width: 100%;                     
     background-color: var(--cor-primaria);
     flex-direction: column;
     align-items: center;
@@ -728,23 +724,23 @@ h3 {
     transition: .6s ease-out;
     visibility: hidden;              /* os elementos vão começar na transição escondidos (hidden) */
     overflow-y: hidden;             /* os elementos no eixo Y vão começar escondidos (hidden) */
-    z-index: 1;                    /* Lista menu quando aberta ficará por cima de tudo */
+    z-index: 1;                     /* lista menu na hora que abre fca por cima de todos os elementos */
 }
 
-.nav.active .lista-menu {                /* classe que vai ser utiliada em JavaScript */
+.nav.active .lista-menu {                
     height: calc(100vh - 80px); 
-    visibility: visible;                /* os elementos depois da transição aparecem */
-    overflow-y: auto;                        /* caso o menu seja maior ele cria uma barra de scrow  */
+    visibility: visible;               
+    overflow-y: auto;                        
        
 }
 
-.lista-menu a {                     /* configuração nomes no menu  */
-   padding: 3rem;                   /* espaçamento interno de cada elemento  */
+.lista-menu a {                     
+   padding: 3rem;                   
    opacity: 0;
    text-align: center;
 }
 
-.lista-menu li:nth-child(1) a {            /* transição suave para cada palavra da Lista de Menu */
+.lista-menu li:nth-child(1) a {            
     transition: 0.5s 0.2s; 
 }
 .lista-menu li:nth-child(2) a {
@@ -760,31 +756,26 @@ h3 {
     transition: 0.5s 0.6s; 
 }
 
-.nav.active .lista-menu a {       /* Lista de Menu aparece novamente  */
-    opacity: 1;                    /* Visibilidade total */ 
+.nav.active .lista-menu a {      
+    opacity: 1;                    
 }
 
 .nav.active .botao-mobile {           
     position:static;
-    border-top-color: transparent;        /* na hora que ocorrer a animação do hamburguer o tracinho de cima some */
+    border-top-color: transparent;        
 }
 
-.nav.active .botao-mobile::before {      /* 2° traço do hamburger vai rotacionar 135graus */
+.nav.active .botao-mobile::before {      
 transform: rotate(135deg);
 }
 
 .nav.active .botao-mobile::after {
-    transform: rotate(-135deg);         /* 3° traço do hamburger vai rotacionar -135graus */
-    top: -7px;                          /* na hora que rotacionar o traço sobe para formar o X corretamente */
+    transform: rotate(-135deg);        
+    top: -7px;                         
 }
 
 
-
-
-
-
-
-    
+ 
 
 .descritivo-portefoleo {
     margin: 24% 0%;
@@ -806,15 +797,15 @@ h1{
 .corpo_conteudo_sobre_mim {
     padding: 0% 6%;
     gap: 0px;  
-    margin: 12% 0%;          /* Margem Ext. – 1° cima e baixo / 2° direita e esquerda */                                      
+    margin: 12% 0%;                       
 }
 .imagem_sobre_mim {
     width: 34vh;
-    padding: 0% 0% 0% 0%; 
+    padding: 0% 0% 0% 00%; 
 }
 .titulo_sobre_mim {
     font-size: 2rem; 
-    padding: 12% 0% 6% 0%;        /* Margem Int. – 1° cima / 2° direita / 3° baixo / 4° esquerda */ 
+    padding: 12% 0% 6% 0%;        
 }
 .texto_sobre_mim {
     font-size: 1.2rem; 
@@ -829,7 +820,7 @@ h1{
                                         /* RESUMO */
 
 h2 {
-    font-size: 2rem;                   /* Tamanho da Fonte */
+    font-size: 2rem;                  
     padding: 0% 0% 4% 0%;
 }
 .img-HTML, .img-CSS, .img-Lightroom, .img-Photoshop, .img-Canva {
@@ -882,7 +873,7 @@ h3 {
     border-radius: 16px;
     cursor: pointer;          /* seta do mouse vira uma mãozinha quando passar por cima do elemento  */
     position: relative;
-    margin-top: 16px;
+    margin-top: 16px;    
 }                              
                                         
 
