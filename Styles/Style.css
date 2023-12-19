@@ -432,11 +432,11 @@ h3 {
 .container_contato {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;           /* altura minima exigida para cada tela, ou seja, 100% preenchido */
+    min-height: 100vh;           
 }
 
 .corpo-contato {
-    flex: 1;                   /* estrutura para manter o Footer sempre abaixo na tela */
+    flex: 1;                   
 }
 
 .apresentacao-contato {
@@ -450,7 +450,7 @@ h3 {
 .contato {
     color: var(--cor-terciaria);
     font-size: var(--fonte-primaria);
-    font-size: 1.8rem;                                      /* Tamanho da Fonte */
+    font-size: 1.8rem;                                     
     font-weight: 750;
     padding-top: -3%;
 }                                            
@@ -463,7 +463,7 @@ h3 {
 .dados-contato {
     color: var(--cor-secundaria);
     font-size: var(--fonte-secundaria);
-    font-size: 1rem;                                   /* Tamanho da Fonte */
+    font-size: 1rem;                                   
 }     
 
 .img_redes_contato {
@@ -510,29 +510,29 @@ form input, form textarea {
     outline: 2px solid var(--cor-terciaria);
     border-radius: 8px;
     padding: 6px 100px;
-    color: var(--cor-secundaria);    /* cor do texto que vai ser digitado */    
+    color: var(--cor-secundaria);    
 }
 
 form input::placeholder {
-    color: var(--cor-secundaria);    /* cor do texto que vai ser digitado */
+    color: var(--cor-secundaria);    
 }
 
-form textarea {    /* mexer no tamanho da textarea */
-    resize: none;          /* tira a opção de ficar alterando o tamanho da textarea */
-    padding: 24% 0;         /* borada interna textarea */
+form textarea {   
+    resize: none;         
+    padding: 24% 0;         
 }
 
-form .botao-enviar input{     /* estilo botão enviar */
+form .botao-enviar input{    
     width: 50%;
     padding: 4%; 
     background-color: var(--cor-terciaria);
     outline: 3px solid var(--cor-selecao);
     margin-top: 2%;
     cursor: pointer;
-    font-weight: 700;         /* largura das letras */    
+    font-weight: 700;         
 }
 
-.botao-enviar input:hover {        /* quando passar o mouse ativa o sombreamento */
+.botao-enviar input:hover {        
     box-shadow: 0px 0px 18px var(--cor-selecao);
     transform: scale(1.05);
 }
@@ -722,9 +722,9 @@ h3 {
     align-items: center;
     justify-content: space-around;
     transition: .6s ease-out;
-    visibility: hidden;              /* os elementos vão começar na transição escondidos (hidden) */
-    overflow-y: hidden;             /* os elementos no eixo Y vão começar escondidos (hidden) */
-    z-index: 1;                     /* lista menu na hora que abre fca por cima de todos os elementos */
+    visibility: hidden;              
+    overflow-y: hidden;             
+    z-index: 1;                   
 }
 
 .nav.active .lista-menu {                
@@ -869,9 +869,9 @@ h3 {
 .img-portfolio {
     width: 300px;
     height: 400px;
-    background-size: cover;      /* cover: faz com que a img de background se adapte ao tamanho da div  */
+    background-size: cover;      
     border-radius: 16px;
-    cursor: pointer;          /* seta do mouse vira uma mãozinha quando passar por cima do elemento  */
+    cursor: pointer;          
     position: relative;
     margin-top: 16px;    
 }                              
