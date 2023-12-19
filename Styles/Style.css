@@ -116,7 +116,6 @@ a:hover {               /* a(significa do menu) Muda a cor do menu quando passa 
 }
 
 
-
 h1 {
     text-align: center;                                      /* alinhamento do texto */
     color:white;                                          /* Cor da Fonte */
@@ -153,7 +152,8 @@ h1 {
     transition-duration: 0.5s;   
 }
 
-                                       
+
+
                                      /* PÁGINA SOBRE MIM */
 
 .corpo_conteudo_sobre_mim {
@@ -289,7 +289,7 @@ h3 {
    animation-timeline: view();
    animation-range: entry 5% cover 50%;    /* entry 10% (Linha começa aparecer em 10%) cover 40% (em que parte da tela vai ficar totlamente visivel, ou seja 40% tela vai ficar visivel */
    
-  }
+}
   
  
 @keyframes efeito-linha {
@@ -323,7 +323,7 @@ h3 {
      
     }
  
- }
+}
 
 
  .linha-horizontal {
@@ -331,7 +331,7 @@ h3 {
     padding: 5px 0px;
     margin: 0px 0px 0px 0px;    /* Margem Ext. – 1° cima / 2° direita / 3° baixo / 4° esquerda */
     border-color: #0C7979;
- }
+}
 
 
 
@@ -440,16 +440,14 @@ h3 {
 
 .corpo-contato {
     flex: 1;                   /* estrutura para manter o Footer sempre abaixo na tela */
-   
 }
 
 .apresentacao-contato {
     display: flex;     
-    outline: 2px solid rgb(128, 15, 0);
+    /* outline: 2px solid rgb(128, 15, 0); */
     justify-content: space-evenly;
     margin-top: 8%;
 }
-
 
 
 .contato {
@@ -461,11 +459,8 @@ h3 {
 }                                            
 
 .area-contatos {   
-    outline: 2px solid green;    /*cor da borda da div */
-    
-    
+   /* outline: 2px solid green;    cor da borda da div */
 }    
-
 
 
 .dados-contato {
@@ -477,14 +472,13 @@ h3 {
 .img_redes_contato {
     display: flex;
     justify-content: center;
-    outline: 2px solid rgb(128, 51, 0); 
+  /*  outline: 2px solid rgb(128, 51, 0); */
     
 }
 
 .img-linkedin, .img-guithub {
     width: 4vh;    
     padding: 8px;
-    
 }
 
 .img_emal, .img_fone, .img_local {
@@ -494,7 +488,7 @@ h3 {
 .img_texto {    
     display: flex;
     align-items: center;
-    outline: 2px solid rgb(2, 0, 128); 
+  /*  outline: 2px solid rgb(2, 0, 128); */
     gap: 12px;
     margin-bottom: 8%;
     padding: 0px 20px 0px 10px;
@@ -540,7 +534,6 @@ form .botao-enviar input{     /* estilo botão enviar */
     cursor: pointer;
     font-weight: 700;         /* largura das letras */    
 }
-
 
 .botao-enviar input:hover {        /* quando passar o mouse ativa o sombreamento */
     box-shadow: 0px 0px 18px var(--cor-selecao);
@@ -712,6 +705,7 @@ h3 {
 @media screen and (max-width: 480px) {         /* screen(tela) max-width(for abaixo) de 480px vai aplicar essas configurações */
 
 
+
                                       /* HOME */
 
 
@@ -734,6 +728,7 @@ h3 {
     transition: .6s ease-out;
     visibility: hidden;              /* os elementos vão começar na transição escondidos (hidden) */
     overflow-y: hidden;             /* os elementos no eixo Y vão começar escondidos (hidden) */
+    z-index: 1;                    /* Lista menu quando aberta ficará por cima de tudo */
 }
 
 .nav.active .lista-menu {                /* classe que vai ser utiliada em JavaScript */
@@ -782,14 +777,6 @@ transform: rotate(135deg);
     transform: rotate(-135deg);         /* 3° traço do hamburger vai rotacionar -135graus */
     top: -7px;                          /* na hora que rotacionar o traço sobe para formar o X corretamente */
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -882,6 +869,46 @@ h3 {
     /*outline: 2px solid green;   cor da borda da div */
     gap: 110px;
 }
+
+
+
+
+                                         /* PORTFÓLIO */
+                                    
+.img-portfolio {
+    width: 300px;
+    height: 400px;
+    background-size: cover;      /* cover: faz com que a img de background se adapte ao tamanho da div  */
+    border-radius: 16px;
+    cursor: pointer;          /* seta do mouse vira uma mãozinha quando passar por cima do elemento  */
+    position: relative;
+    margin-top: 16px;
+}                              
+                                        
+
+
+
+                                        
+
+
+
+
+                                         /* CONTATO */
+.apresentacao-contato {
+    display: flex;
+    flex-direction: column;    
+    align-items: center;  
+    margin: 5%;       
+}
+
+.area-contatos {
+    margin-bottom: 8%;
+}
+
+.img-linkedin, .img-guithub {
+   padding: 16px;
+}
+
 
 }
 
