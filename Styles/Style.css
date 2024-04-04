@@ -199,25 +199,221 @@ h2 {
 }
 
 
+.lista-habilidades {    
+    list-style:none;
+    font-size: 110px;
+    color: #000000;
+    outline: 2px solid rgb(128, 51, 0);
+  margin-top: 8%;
+    
+}
+
+
+
+
+
+
 .img-habilidade-cima {
     display: flex;
-    flex-direction: row;
+    justify-content: space-around;
+    outline: 2px solid rgb(0, 45, 128);
+    
+}
+
+.icone-html5, .icone-css3, .icone-js, .div-wordpress {     /* Blocos cores de fundo */
+    display: flex;
+    position: relative;
+    width: 132px;
+    height: 132px;    
     justify-content: center;
-    padding: 5%;
-    gap: 20%;
+    align-items: center;   
+    padding: 16px 16px 6px 16px;
+    background-color: #111111;     
+    cursor: pointer;
+    transition: 0.8s;
+    border: var(--cor-primaria) solid 4px;
+    border-radius: 8px;
+    transform: scale(1);    
 }
 
 .img-habilidade-baixo {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding: 5%;
-    gap: 20%;
+    justify-content: space-around;
+    margin-top: 8%;     
+    padding-right: 18%;
+    outline: 2px solid rgb(187, 4, 178);
+    gap: 80px;
 }
 
-.img-HTML, .img-CSS, .img-Lightroom, .img-Photoshop, .img-Canva {
-    width: 16vh;
+.div-joomla-black {
+    display: flex;    
+    width: 132px;
+    height: 132px;    
+    justify-content: center;    
+    padding: 16px 16px 6px 16px;
+    background-color: #111111;     
+    cursor: pointer;
+    transition: 0.8s;
+    border: var(--cor-primaria) solid 4px;
+    border-radius: 8px;
+    transform: scale(1);    
 }
+
+.div-figma-black {
+    display: flex;    
+    width: 132px;
+    height: 132px;    
+    justify-content: center;    
+    padding: 16px 16px 6px 16px;
+    background-color: #111111;     
+    cursor: pointer;
+    transition: 0.8s;
+    border: var(--cor-primaria) solid 4px;
+    border-radius: 8px;
+    transform: scale(1);  
+    outline: 2px solid rgb(187, 169, 4);  
+}
+
+
+
+
+.icone-html5:hover {             /* efeito blocos aumentando */
+    transform: scale(1.2);
+}
+.icone-css3:hover {
+    transform: scale(1.2);
+} 
+.icone-js:hover {
+    transform: scale(1.2);
+} 
+.div-wordpress:hover {
+    transform: scale(1.2);
+} 
+
+
+.container_joomla:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    transition: 0.8s;
+} 
+.div-joomla-color {
+   padding: 24px 0px 0px 38px;
+}
+
+
+.container_figma:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    transition: 0.8s;
+} 
+.div-figma-color {
+    padding: 4px 0px 0px 16px;
+ }
+
+
+ .container_joomla {
+    margin-right: 18%;
+ }
+
+ .div-wordpress {
+    margin-left: 4%;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+.nomes-icones {
+    position: absolute;   
+    color: aliceblue;   
+    font-family: 'Oswald', sans-serif;                  
+    font-size: 1.5rem;                                 
+    font-weight: 600;  
+    outline: 2px solid rgb(197, 185, 10);
+    transform: scale(1) translateY(200%);
+    opacity: 0;
+    
+}
+
+.nomes-icones:hover {
+    opacity: 1;
+    transform: scale(1.2) translateY(100%);
+    padding-top: 28%;
+
+}
+*/
+
+
+
+.fa-html5:hover {
+    color:#e04604;          
+}
+
+.fa-css3-alt:hover {
+    color:#004CE8;    
+}
+
+.fa-js:hover {
+    color:#FFDF00;
+}
+
+.fa-wordpress:hover {
+    color:#00769D;
+}
+
+
+
+
+.img-figma-color {
+    width: 108px;   
+    opacity: 0; 
+    transition: 0.8s;
+    outline: 2px solid rgb(187, 4, 178);
+}
+.img-figma-color:hover {
+    opacity: 1;    
+    outline: 2px solid rgb(90, 2, 107);
+    padding: 20%;
+    transition: 0.8s;
+}
+
+
+.div-figma-black, .div-figma-color {
+    position: absolute;
+}
+
+.div-joomla-black, .div-joomla-color {
+    position: absolute;
+}
+
+.img-joomla-color {
+    width: 96px;
+    opacity: 0;
+    transition: 0.8s;
+    
+}
+.img-joomla-color:hover {
+    opacity: 1;    
+}
+
+
+
+
+
+
+
+
+
+
+
 
 .divisao-horiontal-verde {
     background-color: rgb(0, 81, 82);
@@ -550,6 +746,13 @@ form .botao-enviar input{     /* estilo botão enviar */
 
 
                                                 /* RESPONSIVIDADE */  
+
+
+/* Desktop */                                              
+@media screen and (max-width: 1024px) {
+    
+}
+
 
 
    /* Desktop */                                              
