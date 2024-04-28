@@ -204,20 +204,14 @@ h2 {
     font-size: 110px;
     color: #000000;
     outline: 2px solid rgb(128, 51, 0);
-  margin-top: 8%;
+    margin-top: 8%;
     
 }
-
-
-
-
-
 
 .img-habilidade-cima {
     display: flex;
     justify-content: space-around;
-    outline: 2px solid rgb(0, 45, 128);
-    
+  /*  outline: 2px solid rgb(0, 45, 128); */
 }
 
 .icone-html5, .icone-css3, .icone-js, .div-wordpress {     /* Blocos cores de fundo */
@@ -240,9 +234,7 @@ h2 {
     display: flex;
     justify-content: space-around;
     margin-top: 8%;     
-    padding-right: 18%;
-    outline: 2px solid rgb(187, 4, 178);
-    gap: 80px;
+      /*  outline: 2px solid rgb(187, 4, 178); */    
 }
 
 .div-joomla-black {
@@ -264,14 +256,14 @@ h2 {
     width: 132px;
     height: 132px;    
     justify-content: center;    
-    padding: 16px 16px 6px 16px;
+    padding: 16px 16px 6px 18px;
     background-color: #111111;     
     cursor: pointer;
     transition: 0.8s;
     border: var(--cor-primaria) solid 4px;
     border-radius: 8px;
     transform: scale(1);  
-    outline: 2px solid rgb(187, 169, 4);  
+    
 }
 
 
@@ -297,28 +289,27 @@ h2 {
     transition: 0.8s;
 } 
 .div-joomla-color {
-   padding: 24px 0px 0px 38px;
+   padding: 16px 0px 0px 22px;
 }
 
 
 .container_figma:hover {
-    transform: scale(1.2);
-    cursor: pointer;
+    transform: scale(1.2);    
     transition: 0.8s;
 } 
 .div-figma-color {
-    padding: 4px 0px 0px 16px;
+    padding: 6px 0px 0px 14px;
  }
-
 
  .container_joomla {
-    margin-right: 18%;
+    margin-right: 10%;    
  }
 
- .div-wordpress {
-    margin-left: 4%;
- }
 
+ .container_figma {
+    margin-right: 12%;
+    margin-left: 10px;
+ }
 
 
 
@@ -370,39 +361,36 @@ h2 {
 }
 
 
-
-
-.img-figma-color {
-    width: 108px;   
-    opacity: 0; 
-    transition: 0.8s;
-    outline: 2px solid rgb(187, 4, 178);
-}
-.img-figma-color:hover {
-    opacity: 1;    
-    outline: 2px solid rgb(90, 2, 107);
-    padding: 20%;
-    transition: 0.8s;
-}
-
-
-.div-figma-black, .div-figma-color {
-    position: absolute;
-}
-
 .div-joomla-black, .div-joomla-color {
     position: absolute;
 }
-
 .img-joomla-color {
     width: 96px;
     opacity: 0;
-    transition: 0.8s;
-    
+    transition: 0.8s;   
+    padding: 16px; 
 }
 .img-joomla-color:hover {
     opacity: 1;    
 }
+
+.div-figma-black, .div-figma-color {
+    position: absolute;
+}
+.img-figma-color {
+    width: 112px;   
+    opacity: 0; 
+    transition: 0.8s; 
+    padding: 18px;   
+}
+.img-figma-color:hover {
+    opacity: 1;  
+}
+
+
+
+
+
 
 
 
@@ -566,18 +554,82 @@ h3 {
     flex-direction: column;
     align-items: center;
     gap: 40px;
-    margin-top: 64px;
+    margin: 58px 0px 68px 0px;    
 }
 
-.img-portfolio {
-    width: 360px;
-    height: 460px;
+.caixa_protifolios {
+    display: flex;
+    flex-direction: row; 
+    gap: 136px;    
+}
+
+.bloco_portfolio_PJ, .bloco_portfolio_wnfitas {
+    display: flex;
+    flex-direction: column; 
+    background-color: #111111;
+    padding: 0px 16px 20px 16px;
+    border-radius: 8px;
+}
+
+.img-portfolio { 
+    display: flex;   
+    flex-direction: column;
+    width: 320px;
+    height: 420px;
     background-size: cover;      
-    border-radius: 16px;
-    cursor: pointer;          
+    border-radius: 8px;         
     position: relative;
+    margin-top: 16px;    
+}      
+
+.titulo_port_paulojr {
+    display: flex;   
+    flex-direction: column;
+}
+
+.descritivo-port_paulojr {
+    color: var(--cor-secundaria);
+   /* outline: 2px solid rgb(187, 4, 178); */
+    text-align: justify; 
     margin-top: 16px;
-}                              
+}
+
+.descritivo-tecnologias-port {
+    color: var(--cor-terciaria);
+    padding: 26px 0px 8px 0px;
+}
+
+.descritivo-tecnologias-wnfitas {
+    padding: 8px 0px 8px 0px;
+    color: var(--cor-terciaria);
+}
+
+.btn-site, .btn-guithub {        
+    width: 40%;    
+    padding: 3%; 
+    background-color: #111111; 
+    color: var(--cor-secundaria);   /*cor da fonte */
+    border: 3px solid black;
+    border-radius: 8px;
+    outline: 3px solid var(--cor-primaria);
+    margin-top: 2%;
+    cursor: pointer;
+    font-weight: 700;  
+    font-family: 'Oswald', sans-serif;    
+    margin: 16px 0px 0px 0px;     
+}
+
+
+.btn-guithub:hover, .btn-site:hover {
+    background: var(--cor-primaria);
+    box-shadow: 0px 0px 18px var(--cor-primaria);
+    transform: scale(1.05);    
+    transition: 0.2s;
+}
+  
+.btn-guithub {
+    margin-left: 58px;
+}
 
 .efeito-sobrepor {
     display: flex;
@@ -589,7 +641,7 @@ h3 {
     width: 100%;
     height: 100%;
     background-color: #000000d8;
-    border-radius: 16px;
+    border-radius: 8px;
     font-size: 32px;
     font-weight: 600;
     color:var(--cor-selecao);
@@ -599,9 +651,19 @@ h3 {
     transition: .5s;               
 }
 
+
 .efeito-sobrepor:hover {
     opacity: 1;
 }
+
+.img-portfolio-wnfitas {
+    width: 320px;
+    height: 420px;
+    background-size: cover;      
+    border-radius: 8px;             
+    position: relative;
+    margin-top: 16px;
+}              
 
 .rodape {
     color: var(--cor-secundaria);     
@@ -718,19 +780,21 @@ form textarea {
     padding: 24% 0;         
 }
 
-form .botao-enviar input{    
+form .botao-enviar input {    
     width: 50%;
     padding: 4%; 
     background-color: var(--cor-terciaria);
     outline: 3px solid var(--cor-selecao);
     margin-top: 2%;
     cursor: pointer;
-    font-weight: 700;         
+    font-weight: 700;  
+    transition: 0.5s;       
 }
 
 .botao-enviar input:hover {        
     box-shadow: 0px 0px 18px var(--cor-selecao);
     transform: scale(1.05);
+    outline: 3px solid var(--cor-secundaria);
 }
 
 
@@ -824,7 +888,7 @@ padding: 50px;
     flex-wrap: wrap;
     margin: 0px;
     padding: 0px;
-justify-content:space-around;
+    justify-content:space-around;
 
 }
                                             
