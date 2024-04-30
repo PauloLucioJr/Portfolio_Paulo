@@ -203,7 +203,7 @@ h2 {
     list-style:none;
     font-size: 110px;
     color: #000000;
-    outline: 2px solid rgb(128, 51, 0);
+   /* outline: 2px solid rgb(128, 51, 0); */
     margin-top: 8%;
     
 }
@@ -211,7 +211,7 @@ h2 {
 .img-habilidade-cima {
     display: flex;
     justify-content: space-around;
-  /*  outline: 2px solid rgb(0, 45, 128); */
+  /* outline: 2px solid rgb(0, 45, 128); */
 }
 
 .icone-html5, .icone-css3, .icone-js, .div-wordpress {     /* Blocos cores de fundo */
@@ -227,7 +227,9 @@ h2 {
     transition: 0.8s;
     border: var(--cor-primaria) solid 4px;
     border-radius: 8px;
-    transform: scale(1);    
+    transform: scale(1);  
+    
+    
 }
 
 .img-habilidade-baixo {
@@ -248,7 +250,7 @@ h2 {
     transition: 0.8s;
     border: var(--cor-primaria) solid 4px;
     border-radius: 8px;
-    transform: scale(1);    
+    transform: scale(1);   
 }
 
 .div-figma-black {
@@ -262,15 +264,14 @@ h2 {
     transition: 0.8s;
     border: var(--cor-primaria) solid 4px;
     border-radius: 8px;
-    transform: scale(1);  
-    
+    transform: scale(1);        
 }
 
 
 
 
 .icone-html5:hover {             /* efeito blocos aumentando */
-    transform: scale(1.2);
+    transform: scale(1.2);    
 }
 .icone-css3:hover {
     transform: scale(1.2);
@@ -302,13 +303,14 @@ h2 {
  }
 
  .container_joomla {
-    margin-right: 10%;    
+    margin-right: 10%;       
  }
 
 
  .container_figma {
     margin-right: 12%;
     margin-left: 10px;
+    /*outline: 2px solid rgb(197, 185, 10);*/
  }
 
 
@@ -318,48 +320,60 @@ h2 {
 
 
 
-
-
-
-/* 
-.nomes-icones {
+.nomes-icones, .nome-icone-figma, .nome-icone-joomla {
     position: absolute;   
     color: aliceblue;   
     font-family: 'Oswald', sans-serif;                  
-    font-size: 1.5rem;                                 
+    font-size: 1.2rem;                                 
     font-weight: 600;  
-    outline: 2px solid rgb(197, 185, 10);
-    transform: scale(1) translateY(200%);
-    opacity: 0;
-    
+    transform: scale(1) translateY(130%);
+    bottom: 5px;
+    visibility: hidden;      
 }
 
-.nomes-icones:hover {
-    opacity: 1;
-    transform: scale(1.2) translateY(100%);
-    padding-top: 28%;
-
+.nome-icone-joomla {
+    margin: 0px 0px 12px 32px;     
 }
-*/
+.nome-icone-figma {
+    margin: 0px 0px 20px 50px;      
+}
+
+.icone-html5:hover .nomes-icones {
+    visibility: visible;
+}
+.icone-css3:hover .nomes-icones {
+    visibility: visible;
+}
+.icone-js:hover .nomes-icones {
+    visibility: visible;
+}
+.div-wordpress:hover .nomes-icones {
+    visibility: visible;
+}
+.container_joomla:hover .nome-icone-joomla {
+    visibility: visible;
+}
+.container_figma:hover .nome-icone-figma {
+    visibility: visible;
+} 
 
 
+.fa-html5, .fa-css3-alt, .fa-js, .fa-wordpress {
+    padding: 12px 30px 20px 30px;    
+}
 
 .fa-html5:hover {
-    color:#e04604;          
+    color:#e04604;    
 }
-
 .fa-css3-alt:hover {
     color:#004CE8;    
 }
-
 .fa-js:hover {
-    color:#FFDF00;
+    color:#FFDF00;    
 }
-
 .fa-wordpress:hover {
-    color:#00769D;
+    color:#00769D;    
 }
-
 
 .div-joomla-black, .div-joomla-color {
     position: absolute;
