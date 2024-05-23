@@ -1143,19 +1143,9 @@ h3 {
 
                                          /* PORTFÓLIO */
                                     
-.img-portfolio {
-    width: 324px;
- 
-    
-    margin-top: 16px;    
+.img-portfolio, .img-portfolio-wnfitas {
+    width: 326px;    
 }   
-
-.img-portfolio-wnfitas {
-    width: 324px;
-    position: relative;
-    margin-top: 16px;
-
-}
 
 .bloco_portfolio_PJ, .bloco_portfolio_wnfitas {
    
