@@ -1144,7 +1144,7 @@ h3 {
                                          /* PORTFÓLIO */
                                     
 .img-portfolio {
-    width: 292px;
+    width: 300px;
     height: 400px;
     background-size: cover;      
     border-radius: 16px;
@@ -1153,7 +1153,7 @@ h3 {
 }   
 
 .img-portfolio-wnfitas {
-    width: 292px;
+    width: 300px;
     height: 420px;              
     position: relative;
     margin-top: 16px;
