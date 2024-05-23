@@ -717,8 +717,6 @@ h3 {
     justify-content: space-evenly;
     margin-top: 8%;
 }
-
-
 .contato {
     color: var(--cor-terciaria);
     font-size: var(--fonte-primaria);
@@ -794,6 +792,8 @@ form textarea {
     padding: 24% 0;         
 }
 
+
+
 form .botao-enviar input {    
     width: 50%;
     padding: 4%; 
@@ -827,8 +827,7 @@ form .botao-enviar input {
 
 
 /* Desktop */                                              
-@media screen and (max-width: 1024px) {
-    
+@media screen and (max-width: 1024px) {    
 }
 
 
@@ -988,7 +987,8 @@ h3 {
 
 .botao-mobile {
     display: block;          
-    margin: 5px;            
+    margin: 5px;  
+    color: var(--cor-terciaria)         
 }
 
 .lista-menu {
@@ -1011,8 +1011,7 @@ h3 {
 .nav.active .lista-menu {                
     height: calc(100vh - 80px); 
     visibility: visible;               
-    overflow-y: auto;                        
-       
+    overflow-y: auto;               
 }
 
 .lista-menu a {                     
@@ -1055,11 +1054,8 @@ transform: rotate(135deg);
     top: -7px;                         
 }
 
-
- 
-
 .descritivo-portefoleo {
-    margin: 24% 0%;
+    margin: 16% 0%;
 }
 
 h1{
@@ -1148,7 +1144,7 @@ h3 {
                                          /* PORTFÓLIO */
                                     
 .img-portfolio {
-    width: 300px;
+    width: 320px;
     height: 400px;
     background-size: cover;      
     border-radius: 16px;
@@ -1156,9 +1152,13 @@ h3 {
     position: relative;
     margin-top: 16px;    
 }                              
-                                        
-
-                                        
+  
+.caixa_protifolios {
+    display: flex;
+    flex-direction: column;
+    gap: 68px;
+}
+                                     
 
 
 
@@ -1172,11 +1172,15 @@ h3 {
 }
 
 .area-contatos {
-    margin-bottom: 8%;
+    margin-bottom: 8%;    
 }
 
 .img-linkedin, .img-guithub {
    padding: 16px;
+}
+
+form .botao-enviar input {
+    width: 100%;      
 }
 
 
