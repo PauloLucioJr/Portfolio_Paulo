@@ -1144,21 +1144,44 @@ h3 {
                                          /* PORTFÓLIO */
                                     
 .img-portfolio {
-    width: 320px;
+    width: 292px;
     height: 400px;
     background-size: cover;      
     border-radius: 16px;
-    cursor: pointer;          
-    position: relative;
+    
     margin-top: 16px;    
-}                              
+}   
+
+.img-portfolio-wnfitas {
+    width: 292px;
+    height: 420px;              
+    position: relative;
+    margin-top: 16px;
+
+}
+
+.bloco_portfolio_PJ, .bloco_portfolio_wnfitas {
+   
+    padding: 0px 16px 20px 16;    
+    margin: 4%;
+}
   
 .caixa_protifolios {
     display: flex;
     flex-direction: column;
-    gap: 68px;
+    gap: 42px;
 }
-                                     
+   
+.titulo_port_paulojr, .titulo_port_wnfitas {
+    margin-bottom: 8%;
+}
+
+.btn-site, .btn-guithub {        
+    width: 46%;        
+}
+.btn-guithub {
+    margin-left: 16px;
+}
 
 
 
