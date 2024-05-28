@@ -350,21 +350,32 @@ h2 {
 } 
 
 
-.fa-html5, .fa-css3-alt, .fa-js, .fa-wordpress {
-    padding: 12px 30px 20px 30px;    
+.fa-css3-alt, .fa-js, .fa-wordpress {
+    padding: 12px 30px 20px 30;    
 }
-
-.fa-html5:hover {
-    color:#e04604;    
+.img-html5, .img-js {
+    width: 98px;
+    padding-top: 24px;
 }
-.fa-css3-alt:hover {
-    color:#004CE8;    
+.img-css3 {
+    width: 92px;
+    padding-top: 24px;
 }
-.fa-js:hover {
-    color:#FFDF00;    
+.img-wp {
+    width: 114px;
+    padding-top: 24px;
 }
-.fa-wordpress:hover {
-    color:#00769D;    
+.img-html5:hover {
+    filter: brightness(0) saturate(100%) invert(34%) sepia(60%) saturate(1970%) hue-rotate(356deg) brightness(90%) contrast(104%);      
+}
+.img-css3:hover {
+    filter: brightness(0) saturate(100%) invert(15%) sepia(98%) saturate(5974%) hue-rotate(221deg) brightness(95%) contrast(102%);   
+}
+.img-js:hover {
+    filter: brightness(0) saturate(100%) invert(84%) sepia(20%) saturate(3552%) hue-rotate(1deg) brightness(107%) contrast(103%);   
+}
+.img-wp:hover {
+    filter: brightness(0) saturate(100%) invert(26%) sepia(85%) saturate(1681%) hue-rotate(170deg) brightness(94%) contrast(101%);   
 }
 
 .div-joomla-black, .div-joomla-color {
@@ -379,7 +390,6 @@ h2 {
 .img-joomla-color:hover {
     opacity: 1;    
 }
-
 .div-figma-black, .div-figma-color {
     position: absolute;
 }
@@ -1132,9 +1142,7 @@ h3 {
 .img-habilidade-cima, .img-habilidade-baixo, .container_figma, .div-figma-color {
    
 }
-.lista-habilidades {
-    margin-bottom: 80%;
-}
+
 
 
 .icone-html5, .icone-css3, .icone-js, .div-wordpress, .div-joomla-black, .div-figma-black {     /* Blocos cores de fundo */
@@ -1176,9 +1184,10 @@ h3 {
     visibility: visible;      
 }
 
-.fa-html5 {
-    color:#e04604;    
-            
+.img-html5 {
+    filter: brightness(0) saturate(100%) invert(34%) sepia(60%) saturate(1970%) hue-rotate(356deg) brightness(90%) contrast(104%);  
+    width: 58px;
+       
 }
 .fa-css3-alt {
     color:#004CE8;    
@@ -1193,6 +1202,16 @@ h3 {
 .fa-figma, .fa-joomla {
     opacity: 0;
 }
+
+
+
+
+
+
+
+
+
+
 
 
                                          /* PORTFÓLIO */
