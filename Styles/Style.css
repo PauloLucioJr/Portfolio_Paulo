@@ -22,7 +22,6 @@ body {
 }
 
 
-
 .cabecalho {
     display: flex;
     background-color: var(--cor-primaria);   
@@ -45,7 +44,6 @@ a:hover {
     color: var(--cor-selecao);    
 }
 
-
 .lista-menu {             
     display: flex;
     list-style: none;        
@@ -55,7 +53,6 @@ a:hover {
 
 .lista-menu a {           
     display: block;
-    
 }
 
 .botao-mobile {
@@ -1125,7 +1122,7 @@ h3 {
 
 .imagems-educação_esquerda {
     gap: 30px;
-    padding: 0% 0% 0% 0%; 
+     
     margin-top: 100%;
 } 
 
@@ -1139,15 +1136,10 @@ h3 {
     gap: 110px;
 }
 
-.img-habilidade-cima, .img-habilidade-baixo, .container_figma, .div-figma-color {
-   
-}
-
 
 
 .icone-html5, .icone-css3, .icone-js, .div-wordpress, .div-joomla-black, .div-figma-black {     /* Blocos cores de fundo */
-    display: flex;
-    
+    display: flex;    
     width: 68px;
     height: 68px;    
     justify-content: center;
@@ -1155,11 +1147,6 @@ h3 {
     padding: 16px 16px 6px 16px;
     background-color: #111111;     
         
-}
-
-.container_joomla:hover {
-    
-    cursor: none;
 }
 
 
@@ -1186,18 +1173,23 @@ h3 {
 
 .img-html5 {
     filter: brightness(0) saturate(100%) invert(34%) sepia(60%) saturate(1970%) hue-rotate(356deg) brightness(90%) contrast(104%);  
+    width: 58px;      
+}
+.img-css3 {
+    filter: brightness(0) saturate(100%) invert(15%) sepia(98%) saturate(5974%) hue-rotate(221deg) brightness(95%) contrast(102%);   
     width: 58px;
-       
 }
-.fa-css3-alt {
-    color:#004CE8;    
+.img-js {
+    filter: brightness(0) saturate(100%) invert(84%) sepia(20%) saturate(3552%) hue-rotate(1deg) brightness(107%) contrast(103%);   
+    width: 58px;
 }
-.fa-js {
-    color:#FFDF00;    
+.img-wp {
+    filter: brightness(0) saturate(100%) invert(26%) sepia(85%) saturate(1681%) hue-rotate(170deg) brightness(94%) contrast(101%);   
+    width: 58px;
 }
-.fa-wordpress {
-    color:#00769D;    
-}
+
+
+
 
 .fa-figma, .fa-joomla {
     opacity: 0;
