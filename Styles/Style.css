@@ -1098,9 +1098,7 @@ h2 {
     font-size: 2rem;                  
     padding: 0% 0% 4% 0%;
 }
-.img-HTML, .img-CSS, .img-Lightroom, .img-Photoshop, .img-Canva {
-    width: 12vh;
-}
+
 h4 {    
     font-size: 0.8rem;
 }
@@ -1121,8 +1119,7 @@ h3 {
 }
 
 .imagems-educação_esquerda {
-    gap: 30px;
-     
+    gap: 30px;     
     margin-top: 100%;
 } 
 
@@ -1138,38 +1135,27 @@ h3 {
 
 
 
-.icone-html5, .icone-css3, .icone-js, .div-wordpress, .div-joomla-black, .div-figma-black {     /* Blocos cores de fundo */
-    display: flex;    
-    width: 68px;
-    height: 68px;    
+
+
+
+
+
+
+
+
+.icone-html5, .icone-css3, .icone-js, .div-wordpress {     /* Blocos cores de fundo - containers */
+    display: flex;
+    position: relative;
+    width: 122px;
+    height: 122px;    
     justify-content: center;
     align-items: center;   
-    padding: 16px 16px 6px 16px;
-    background-color: #111111;     
-        
+    padding: 16px 16px 6px 16px;        
+    
 }
 
 
-.fa-html5, .fa-css3-alt, .fa-js, .fa-wordpress {
-    padding: 12px 15px 20px 30px;    
-}
 
-.img-joomla-color, .img-figma-color  {
-    width: 56px;
-    opacity: 1;
-    padding: 0px; 
-}
-
-.nomes-icones, .nome-icone-figma, .nome-icone-joomla {
-    position: absolute;   
-    color: aliceblue;   
-    font-family: 'Oswald', sans-serif;                  
-    font-size: 1.2rem;                                 
-    font-weight: 600;  
-    transform: scale(1) translateY(130%);
-    bottom: 5px;
-    visibility: visible;      
-}
 
 .img-html5 {
     filter: brightness(0) saturate(100%) invert(34%) sepia(60%) saturate(1970%) hue-rotate(356deg) brightness(90%) contrast(104%);  
@@ -1188,12 +1174,95 @@ h3 {
     width: 58px;
 }
 
+.img-html5, .img-js {
+    width: 86px;
+    padding-top: 24px;
+}
+.img-css3 {
+    width: 80px;
+    padding-top: 24px;
+}
+.img-wp {
+    width: 100px;
+    padding-top: 24px;
+}
 
+.nomes-icones, .nome-icone-figma, .nome-icone-joomla {                   
+    font-size: 1.2rem;                                 
+    font-weight: 600;  
+    bottom: 5px;
+    visibility: visible;      
+}
 
 
 .fa-figma, .fa-joomla {
     opacity: 0;
 }
+
+
+
+
+
+
+
+
+.img-habilidade-cima {
+    display: flex;
+    justify-content: space-around;
+  /* outline: 2px solid rgb(0, 45, 128); */
+  gap: 18px;
+}
+
+
+.img-habilidade-baixo {
+    display: flex;
+    justify-content: space-around;
+    margin: 16% 0% 16% 0%;     
+     
+}
+
+
+
+
+
+
+
+.div-figma-color {
+    padding: 14px 0px 0px 6px;
+ }
+
+ .container_joomla {               /*mexe no espaçamento entre entre os containers*/
+    margin-right: 40%;       
+ }
+
+ .container_figma {
+    margin-right: 12%;
+    margin-left: 10px;
+    /*outline: 2px solid rgb(197, 185, 10);*/
+ }
+
+
+.img-joomla-color {
+    width: 96px;
+    opacity: 1;    
+    padding: 16px; 
+}
+.img-figma-color {
+    width: 100px;   
+    opacity: 1;     
+    padding: 18px;   
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
