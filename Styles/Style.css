@@ -1146,11 +1146,11 @@ h3 {
 .icone-html5, .icone-css3, .icone-js, .div-wordpress {     /* Blocos cores de fundo - containers */
     display: flex;
     position: relative;
-    width: 122px;
-    height: 122px;    
+    width: 80px;
+    height: 80px;    
     justify-content: center;
     align-items: center;   
-    padding: 16px 16px 6px 16px;        
+    padding: 14px 14px 14px 14px;        
     
 }
 
@@ -1159,36 +1159,36 @@ h3 {
 
 .img-html5 {
     filter: brightness(0) saturate(100%) invert(34%) sepia(60%) saturate(1970%) hue-rotate(356deg) brightness(90%) contrast(104%);  
-    width: 58px;      
+    
 }
 .img-css3 {
     filter: brightness(0) saturate(100%) invert(15%) sepia(98%) saturate(5974%) hue-rotate(221deg) brightness(95%) contrast(102%);   
-    width: 58px;
+    
 }
 .img-js {
     filter: brightness(0) saturate(100%) invert(84%) sepia(20%) saturate(3552%) hue-rotate(1deg) brightness(107%) contrast(103%);   
-    width: 58px;
+    
 }
 .img-wp {
     filter: brightness(0) saturate(100%) invert(26%) sepia(85%) saturate(1681%) hue-rotate(170deg) brightness(94%) contrast(101%);   
-    width: 58px;
+   
 }
 
 .img-html5, .img-js {
-    width: 86px;
-    padding-top: 24px;
+    width: 64px;
+    padding-top: 28px;
 }
 .img-css3 {
-    width: 80px;
+    width: 58px;
     padding-top: 24px;
 }
 .img-wp {
-    width: 100px;
+    width: 72px;
     padding-top: 24px;
 }
 
 .nomes-icones, .nome-icone-figma, .nome-icone-joomla {                   
-    font-size: 1.2rem;                                 
+    font-size: 1.1rem;                                 
     font-weight: 600;  
     bottom: 5px;
     visibility: visible;      
@@ -1197,6 +1197,12 @@ h3 {
 
 .fa-figma, .fa-joomla {
     opacity: 0;
+}
+
+
+.corpo_conteudo_habilidades {
+    padding: 10% 16% 10% 0%;
+   
 }
 
 
@@ -1210,7 +1216,9 @@ h3 {
     display: flex;
     justify-content: space-around;
   /* outline: 2px solid rgb(0, 45, 128); */
-  gap: 18px;
+  gap: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
 
@@ -1222,35 +1230,59 @@ h3 {
 }
 
 
+.div-joomla-black {
+    display: flex;    
+    width: 78px;
+    height: 86px;    
+    justify-content: center;    
+    padding: 6px 8px 16px 16px;
+  
+}
 
+.div-joomla-color {
+    padding: 8px 0px 0px 6px;
+ }
+ 
+
+
+
+
+ .div-figma-black {
+    display: flex;    
+    width: 78px;
+    height: 86px;    
+    justify-content: center;    
+    padding: 5px 16px 6px 8px;
+      
+}
 
 
 
 
 .div-figma-color {
-    padding: 14px 0px 0px 6px;
+    padding: 5px 0px 0px 6px;
  }
 
  .container_joomla {               /*mexe no espaçamento entre entre os containers*/
-    margin-right: 40%;       
+    margin-right: 48%;       
  }
 
  .container_figma {
-    margin-right: 12%;
-    margin-left: 10px;
+    margin-right: 50%;
+    margin-left: 0px;
     /*outline: 2px solid rgb(197, 185, 10);*/
  }
 
 
 .img-joomla-color {
-    width: 96px;
+    width: 62px;
     opacity: 1;    
-    padding: 16px; 
+    padding: 18px; 
 }
 .img-figma-color {
-    width: 100px;   
+    width: 68px;   
     opacity: 1;     
-    padding: 18px;   
+    padding: 2px;   
 }
 
 
