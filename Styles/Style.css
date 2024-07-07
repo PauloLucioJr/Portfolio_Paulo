@@ -1216,8 +1216,7 @@ h3 {
     display: flex;
     justify-content: space-around;
   /* outline: 2px solid rgb(0, 45, 128); */
-  gap: 16px;
-  
+  gap: 18px;  
 }
 
 
