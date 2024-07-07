@@ -1201,7 +1201,7 @@ h3 {
 
 
 .corpo_conteudo_habilidades {
-    padding: 10% 16% 10% 0%;
+    padding: 10% 16% 10% 8%;      /* cima - dir - baixo - esq  */
    
 }
 
@@ -1216,9 +1216,8 @@ h3 {
     display: flex;
     justify-content: space-around;
   /* outline: 2px solid rgb(0, 45, 128); */
-  gap: 0px;
-  margin: 0px;
-  padding: 0px;
+  gap: 8px;
+  
 }
 
 
