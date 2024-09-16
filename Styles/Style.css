@@ -132,6 +132,7 @@ h1 {
     flex-direction: row;                   
     align-items: center;                 
     justify-content: center;  
+    gap: 20px;   
 }
 
 .img-linkedin, .img-guithub {                   
@@ -139,12 +140,8 @@ h1 {
     padding: 24px 10px 0px 20px;     
 }
 
-.img-para-portifolio {
-    gap: 20px;
-       
-}
 .img-para-portifolio a:hover {
-    transform: scale(1.3);
+    transform: scale(1.1);
     transition-duration: 0.5s;   
 }
 
@@ -182,10 +179,13 @@ h1 {
 
 
 
+
+
+
                                              /* PÁGINA RESUMO */
                                   
 .corpo_conteudo_habilidades {
-    padding: 10%
+    padding-top: 10%;
 }
 
 h2 {
@@ -201,66 +201,60 @@ h2 {
     font-size: 110px;
     color: #000000;
    /* outline: 2px solid rgb(128, 51, 0); */
-    margin-top: 8%;
-    
+    margin-top: 4%; 
+       
 }
 
-.img-habilidade-cima {
+.lista-habilidades-cima {
     display: flex;
-    justify-content: space-around;
-  /* outline: 2px solid rgb(0, 45, 128); */
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
 }
+
+.lista-habilidades-baixo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 100px;
+}
+
+
 
 .icone-html5, .icone-css3, .icone-js, .div-wordpress {     /* Blocos cores de fundo */
-    display: flex;
-    position: relative;
+    display: flex;    
+    flex-direction: column;
     width: 132px;
     height: 132px;    
     justify-content: center;
     align-items: center;   
-    padding: 16px 16px 6px 16px;
+    padding: 16px;
     background-color: #111111;     
     cursor: pointer;
-    transition: 0.8s;
     border: var(--cor-primaria) solid 4px;
     border-radius: 8px;
-    transform: scale(1);      
+    transition: transform 0.8s ease, background-color 0.8s ease;   
+    /*outline: 2px solid rgb(197, 185, 10);*/ 
+    
 }
 
-.img-habilidade-baixo {
+
+
+.div-joomla-black, .div-figma-black {
     display: flex;
-    justify-content: space-around;
-    margin-top: 8%;     
-      /*  outline: 2px solid rgb(187, 4, 178); */    
-}
-
-.div-joomla-black {
-    display: flex;    
+    justify-content: center;
+    align-items: center;
     width: 132px;
-    height: 132px;    
-    justify-content: center;    
-    padding: 16px 16px 6px 16px;
-    background-color: #111111;     
-    cursor: pointer;
-    transition: 0.8s;
+    height: 132px;
+    padding: 16px;
+    background-color: #111111;
     border: var(--cor-primaria) solid 4px;
     border-radius: 8px;
-    transform: scale(1);   
+    transition: transform 0.8s ease, background-color 0.8s ease;
+    transform: scale(1);
 }
 
-.div-figma-black {
-    display: flex;    
-    width: 132px;
-    height: 132px;    
-    justify-content: center;    
-    padding: 16px 16px 6px 18px;
-    background-color: #111111;     
-    cursor: pointer;
-    transition: 0.8s;
-    border: var(--cor-primaria) solid 4px;
-    border-radius: 8px;
-    transform: scale(1);        
-}
 
 
 
@@ -278,89 +272,66 @@ h2 {
     transform: scale(1.2);
 } 
 
-
-.container_joomla:hover {
+.container_joomla:hover, .container_figma:hover {
     transform: scale(1.2);
     cursor: pointer;
-    transition: 0.8s;
+    transition: transform 0.8s ease;       
 } 
-.div-joomla-color {
-   padding: 16px 0px 0px 22px;
-}
-
-.container_figma:hover {
-    transform: scale(1.2);    
-    transition: 0.8s;
-} 
-.div-figma-color {
-    padding: 6px 0px 0px 14px;
- }
-
- .container_joomla {
-    margin-right: 10%;       
- }
-
- .container_figma {
-    margin-right: 12%;
-    margin-left: 10px;
-    /*outline: 2px solid rgb(197, 185, 10);*/
- }
-
 
 
 
 .nomes-icones, .nome-icone-figma, .nome-icone-joomla {
-    position: absolute;   
+    position: absolute; 
+    align-items: center;  
     color: aliceblue;   
     font-family: 'Oswald', sans-serif;                  
     font-size: 1.2rem;                                 
     font-weight: 600;  
-    transform: scale(1) translateY(130%);
-    bottom: 5px;
-    visibility: hidden;      
+    transform: scale(1) ;
+    top: 168px;
+    visibility: hidden;   
+    outline: 2px solid rgb(128, 51, 0);  
+    
 }
+
+
 
 .nome-icone-joomla {
-    margin: 0px 0px 12px 32px;     
-}
-.nome-icone-figma {
-    margin: 0px 0px 20px 50px;      
+    top: 148px;   
+    left: 58px;    
 }
 
-.icone-html5:hover .nomes-icones {
-    visibility: visible;
+.nome-icone-figma{
+    top: 148px;   
+    left: 64px;
 }
-.icone-css3:hover .nomes-icones {
-    visibility: visible;
-}
-.icone-js:hover .nomes-icones {
-    visibility: visible;
-}
-.div-wordpress:hover .nomes-icones {
-    visibility: visible;
-}
-.container_joomla:hover .nome-icone-joomla {
-    visibility: visible;
-}
+
+
+
+.icone-html5:hover .nomes-icones,
+.icone-css3:hover .nomes-icones,
+.icone-js:hover .nomes-icones,
+.div-wordpress:hover .nomes-icones,
+.container_joomla:hover .nome-icone-joomla,
 .container_figma:hover .nome-icone-figma {
     visibility: visible;
-} 
+}
 
 
 .fa-css3-alt, .fa-js, .fa-wordpress {
-    padding: 12px 30px 20px 30;    
+    padding: 12px 30px 20px 30px;    
 }
 .img-html5, .img-js {
-    width: 98px;
-    padding-top: 24px;
+    width: 100px;
+    padding-top: 8px;
 }
 .img-css3 {
-    width: 92px;
-    padding-top: 24px;
+    width: 90px;
+    padding-top: 8px;
 }
 .img-wp {
     width: 114px;
-    padding-top: 24px;
+    padding-top: 8px;
 }
 .img-html5:hover {
     filter: brightness(0) saturate(100%) invert(34%) sepia(60%) saturate(1970%) hue-rotate(356deg) brightness(90%) contrast(104%);      
@@ -375,31 +346,24 @@ h2 {
     filter: brightness(0) saturate(100%) invert(26%) sepia(85%) saturate(1681%) hue-rotate(170deg) brightness(94%) contrast(101%);   
 }
 
-.div-joomla-black, .div-joomla-color {
-    position: absolute;
-}
-.img-joomla-color {
-    width: 96px;
-    opacity: 0;
-    transition: 0.8s;   
-    padding: 16px; 
-}
-.img-joomla-color:hover {
-    opacity: 1;    
-}
-.div-figma-black, .div-figma-color {
-    position: absolute;
-}
-.img-figma-color {
-    width: 112px;   
-    opacity: 0; 
-    transition: 0.8s; 
-    padding: 18px;   
-}
-.img-figma-color:hover {
-    opacity: 1;  
+.div-joomla-color, .div-figma-color {
+    position: relative;   
+    top: -150px;
+    padding-left: 20px;
 }
 
+
+
+.img-joomla-color, .img-figma-color {   
+    width: 100px;
+    opacity: 0;
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    padding: 16px;     
+}
+
+.img-joomla-color:hover, .img-figma-color:hover {
+    opacity: 1;    
+}
 
 
 
@@ -481,8 +445,7 @@ h3 {
 .divisao-horiontal-verde, .linha-horizontal {
    animation: efeito-linha 3s ease-in-out;
    animation-timeline: view();
-   animation-range: entry 5% cover 50%;    
-   
+   animation-range: entry 5% cover 50%;      
 }
   
  
@@ -664,7 +627,6 @@ h3 {
     transition: .5s;               
 }
 
-
 .efeito-sobrepor:hover {
     opacity: 1;
 }
@@ -696,109 +658,101 @@ h3 {
 
                                             /* PARTE CONTATO */
 
-
+                                            
                                             
 /* área de contatos */
 
-.container_contato {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;           
+
+
+          
+.blocos-contatos {
+    display: flex;    
+    align-items: center;
+    flex-direction: column-reverse; 
+    padding: 133px 0px;       
 }
-
-.corpo-contato {
-    flex: 1;                   
-}
-
-.apresentacao-contato {
-    display: flex;     
-    /* outline: 2px solid rgb(128, 15, 0); */
-    justify-content: space-evenly;
-    margin-top: 8%;
-}
-.contato {
-    color: var(--cor-terciaria);
-    font-size: var(--fonte-primaria);
-    font-size: 1.8rem;                                     
-    font-weight: 750;
-    padding-top: -3%;
-}                                            
-
-.area-contatos {   
-   /* outline: 2px solid green;    cor da borda da div */
-}    
-
-
-.dados-contato {
-    color: var(--cor-secundaria);
-    font-size: var(--fonte-secundaria);
-    font-size: 1rem;                                   
-}     
 
 .img_redes_contato {
+    display: flex;    
+    flex-direction: row;    
+    gap: 20px;
+}
+
+.nome-icone {
+    position: relative;
+    color: aliceblue;   
+    font-family: 'Oswald', sans-serif;                  
+    font-size: 1.1rem;                                 
+    font-weight: 400;  
+    transform: scale(1) ;
+    visibility: hidden; 
+    text-align: center;
+    padding-left: 8px;
+}
+
+.icone_midia-social {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-  /*  outline: 2px solid rgb(128, 51, 0); */
-    
+    transition: .4s;
 }
 
-.img-linkedin, .img-guithub {
-    width: 4vh;    
-    padding: 8px;
+.icone_midia-social:hover .nome-icone {
+    visibility: visible;
 }
 
-.img_emal, .img_fone, .img_local {
-    width: 4vh; 
-}
+.icone_midia-social:hover {
+    transform: scale(1.2);
+} 
 
-.img_texto {    
-    display: flex;
-    align-items: center;
-  /*  outline: 2px solid rgb(2, 0, 128); */
-    gap: 12px;
-    margin-bottom: 8%;
-    padding: 0px 20px 0px 10px;
-}
 
 
 
 
 /* área do formulário */
+
+
+form h2 {
+    color: var(--cor-terciaria);
+    font-size: var(--fonte-primaria);
+    font-size: 3rem;                                      
+    font-weight: 750;   
+    align-items: center;     
+}
                                                                                  
 form {
+    background-color: #111111;
+    padding: 26px 400px 42px 80px;   
+    border-radius: 16px;
     display: flex;
-    max-width: 500px;
-    flex-direction: column;
-    justify-content: center;    
-    gap: 24px;
+    flex-direction: column;    
+}
+        
+form .input-grupo {
+    margin-bottom: 16px;    
 }
 
-form input, form textarea {      
-    background-color: #0000;
+form input, form textarea {  
+    width: 280%;    
+    background-color: #05050598;
     border: 0;
     outline: 2px solid var(--cor-terciaria);
     border-radius: 8px;
-    padding: 6px 100px;
-    color: var(--cor-secundaria);    
-}
-
-form input::placeholder {
-    color: var(--cor-secundaria);    
+    padding: 8px 8px 8px 8px;
+    color: var(--cor-secundaria); 
+    font-size: 11px;        
 }
 
 form textarea {   
     resize: none;         
-    padding: 24% 0;         
+    padding-bottom: 120px;              
 }
 
-
-
-form .botao-enviar input {    
-    width: 50%;
-    padding: 4%; 
+.botao-enviar input {      
+    width: 100%;
+    padding: 8%; 
     background-color: var(--cor-terciaria);
     outline: 3px solid var(--cor-selecao);
-    margin-top: 2%;
     cursor: pointer;
     font-weight: 700;  
     transition: 0.5s;       
@@ -892,7 +846,6 @@ form .botao-enviar input {
 .cabecalho {
 margin: 0px;
 padding: 50px;
-
 }
 
 .lista-menu {
@@ -901,7 +854,6 @@ padding: 50px;
     margin: 0px;
     padding: 0px;
     justify-content:space-around;
-
 }
                                             
 
@@ -1142,55 +1094,25 @@ h3 {
 
 
 
-
-.icone-html5, .icone-css3, .icone-js, .div-wordpress {     /* Blocos cores de fundo - containers */
-    display: flex;
-    position: relative;
-    width: 80px;
-    height: 80px;    
-    justify-content: center;
-    align-items: center;   
-    padding: 14px 14px 14px 14px;        
-    outline: 2px solid rgb(185, 100, 30);  
-}
+/* PARTE - BLOCO DE ICONES */
 
 
 
 
 .img-html5 {
     filter: brightness(0) saturate(100%) invert(34%) sepia(60%) saturate(1970%) hue-rotate(356deg) brightness(90%) contrast(104%);  
-    
 }
 .img-css3 {
     filter: brightness(0) saturate(100%) invert(15%) sepia(98%) saturate(5974%) hue-rotate(221deg) brightness(95%) contrast(102%);   
-    
 }
 .img-js {
     filter: brightness(0) saturate(100%) invert(84%) sepia(20%) saturate(3552%) hue-rotate(1deg) brightness(107%) contrast(103%);   
-    
 }
 .img-wp {
     filter: brightness(0) saturate(100%) invert(26%) sepia(85%) saturate(1681%) hue-rotate(170deg) brightness(94%) contrast(101%);   
-   
 }
 
-.img-html5 {
-    width: 64px;
-    padding-top: 26px;
-}
-.img-css3 {
-    width: 58px;
-    padding-top: 24px;
-}
-.img-js {
-    width: 64px; 
-    padding-bottom: 2px;   
-}
 
-.img-wp {
-    width: 72px;
-    padding-top: 24px;
-}
 
 .nomes-icones, .nome-icone-figma, .nome-icone-joomla {                   
     font-size: 1.1rem;                                 
@@ -1205,93 +1127,190 @@ h3 {
 }
 
 
-.corpo_conteudo_habilidades {
-    padding: 10% 4% 10% 4%;      /* cima - dir - baixo - esq  */
-   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+h2 {
+    text-align: center;                  
+    color:white;                       
+    font-family: 'Oswald', sans-serif;  
+    font-size: 2.5rem;                   
+}
+
+
+.lista-habilidades {    
+    list-style:none;
+    font-size: 110px;
+    color: #000000;
+   /* outline: 2px solid rgb(128, 51, 0); */
+    margin-top: 8%; 
+       
+}
+
+.lista-habilidades-cima {
+    gap: 50px;
+}
+
+.lista-habilidades-baixo {
+    gap: 50px;
+    margin-top: 50px;
 }
 
 
 
-
-
-
-
-
-.img-habilidade-cima {
-    display: flex;
-    justify-content: space-around;
-  /* outline: 2px solid rgb(0, 45, 128); */
-  gap: 8px;  
-}
-
-
-.img-habilidade-baixo {
-    display: flex;
-    justify-content: space-around;
-    margin: 16% 26% 16% 0%;     
-    gap: 8px;  
-    outline: 2px solid rgb(0, 45, 128); 
-    padding: 0%;
-}
-
-
-.div-joomla-black {
+.icone-html5, .icone-css3, .icone-js, .div-wordpress {     /* Blocos cores de fundo */
     display: flex;    
-    width: 78px;
-    height: 86px;    
-    justify-content: center;    
-    padding: 6px 8px 16px 16px;
-    outline: 2px solid rgb(45, 0, 128);
+    flex-direction: column;
+    width: 132px;
+    height: 132px;    
+    justify-content: center;
+    align-items: center;   
+    padding: 16px;
+      
+    /*outline: 2px solid rgb(197, 185, 10);*/ 
     
 }
 
-.div-joomla-color {
-    padding: 8px 0px 0px 6px;
-    outline: 2px solid rgb(47, 128, 0); 
- }
+
+
+.div-joomla-black, .div-figma-black {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 132px;
+    height: 132px;
+    padding: 16px;
+    
+}
+
+
+
+
+
+.icone-html5:hover {             /* efeito blocos aumentando */
+    transform: scale(1.2);    
+}
+.icone-css3:hover {
+    transform: scale(1.2);
+} 
+.icone-js:hover {
+    transform: scale(1.2);
+} 
+.div-wordpress:hover {
+    transform: scale(1.2);
+} 
+
+.container_joomla:hover, .container_figma:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    transition: transform 0.8s ease;       
+} 
+
+
+
+.nomes-icones, .nome-icone-figma, .nome-icone-joomla {
+    position: absolute; 
+    align-items: center;  
+    color: aliceblue;   
+    font-family: 'Oswald', sans-serif;                  
+    font-size: 1.2rem;                                 
+    font-weight: 600;  
+    transform: scale(1) ;
+    top: 168px;
+    visibility: hidden;   
+    outline: 2px solid rgb(128, 51, 0);  
+    
+}
+
+
+
+.nome-icone-joomla {
+    top: 148px;   
+    left: 58px;    
+}
+
+.nome-icone-figma{
+    top: 148px;   
+    left: 64px;
+}
+
+
+
+.icone-html5:hover .nomes-icones,
+.icone-css3:hover .nomes-icones,
+.icone-js:hover .nomes-icones,
+.div-wordpress:hover .nomes-icones,
+.container_joomla:hover .nome-icone-joomla,
+.container_figma:hover .nome-icone-figma {
+    visibility: visible;
+}
+
+
+.fa-css3-alt, .fa-js, .fa-wordpress {
+    padding: 12px 30px 20px 30px;    
+}
+.img-html5, .img-js {
+    width: 100px;
+    padding-top: 8px;
+}
+.img-css3 {
+    width: 90px;
+    padding-top: 8px;
+}
+.img-wp {
+    width: 114px;
+    padding-top: 8px;
+}
+.img-html5:hover {
+    filter: brightness(0) saturate(100%) invert(34%) sepia(60%) saturate(1970%) hue-rotate(356deg) brightness(90%) contrast(104%);      
+}
+.img-css3:hover {
+    filter: brightness(0) saturate(100%) invert(15%) sepia(98%) saturate(5974%) hue-rotate(221deg) brightness(95%) contrast(102%);   
+}
+.img-js:hover {
+    filter: brightness(0) saturate(100%) invert(84%) sepia(20%) saturate(3552%) hue-rotate(1deg) brightness(107%) contrast(103%);   
+}
+.img-wp:hover {
+    filter: brightness(0) saturate(100%) invert(26%) sepia(85%) saturate(1681%) hue-rotate(170deg) brightness(94%) contrast(101%);   
+}
+
+.div-joomla-color, .div-figma-color {
+    position: relative;   
+    top: -150px;
+    padding-left: 20px;
+}
+
+
+
+.img-joomla-color, .img-figma-color {   
+    width: 100px;
+    opacity: 1;
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    padding: 16px;     
+}
+
+
+
+
+
+
+
  
 
 
 
- .div-figma-black {
-    display: flex;    
-    width: 78px;
-    height: 86px;    
-    justify-content: center;    
-    padding: 6px 8px 16px 16px;
-    outline: 2px solid rgb(128, 0, 6); 
-}
-
-
-
-
-.div-figma-color {
-    padding: 5px 0px 0px 6px;
-    outline: 2px solid rgb(128, 0, 122); 
- }
-
- .container_joomla {               /*mexe no espaçamento entre entre os containers*/
-    margin-right: 31%; 
-    outline: 2px solid rgb(185, 100, 30);       
- }
-
- .container_figma {
-    margin-right: 0%;
-    margin-left: 16px;
-    /*outline: 2px solid rgb(197, 185, 10);*/
- }
-
-
-.img-joomla-color {
-    width: 62px;
-    opacity: 1;    
-    padding: 18px; 
-}
-.img-figma-color {
-    width: 68px;   
-    opacity: 1;     
-    padding: 2px;   
-}
+ 
 
 
 
@@ -1348,29 +1367,34 @@ h3 {
 
 
                                          /* CONTATO */
-.apresentacao-contato {
-    display: flex;
-    flex-direction: column;    
-    align-items: center;  
-    margin: 5%;       
+
+/* área do formulário */
+
+form h2 {
+    font-size: 2.5rem;                                      
+    font-weight: 750;                                                    
+}                                               
+                                                                                                                          
+form {                                            
+    padding: 26px 200px 42px 50px;                                                                        
+}                
+                                            
+form input, form textarea { 
+    width: 180%;   
+    font-size: 11px;        
 }
-
-.area-contatos {
-    margin-bottom: 8%;    
+                                            
+form textarea {   
+    resize: none;         
+    padding-bottom: 120px;              
 }
-
-.img-linkedin, .img-guithub {
-   padding: 16px;
-}
-
-form .botao-enviar input {
-    width: 100%;      
-}
-
-
-}
-
-                                        
+                                     
+.nomes-icones {
+    visibility: visible; 
+    padding: 4px 0px 0px 8px;
+}                                         
+                                                    
+      
 
 
                                                                             

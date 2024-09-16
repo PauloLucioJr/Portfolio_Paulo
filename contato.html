@@ -24,40 +24,65 @@
   </header>
 
   <main class="corpo-contato">
-    <section class="apresentacao-contato">       
+    <section class="section-contato">       
 
-          <div class="area-contatos"> 
-              
-                <h2 class="contato"> CONTATO </h2> 
-              <div class="img_redes_contato">
-                  <a href="https:/www.linkedin.com/in/pauloluciojr/" target="_blank"> <img src="Imagens/png-Linkedin - Logo.png" alt="Linkedin-Logo" class="img-linkedin"> </a> <!-- target = essa função possibilita ao clicar o link seja aberto em outra página -->
-                  <a href="https://github.com/PauloLucioJr" target="_blank"> <img src="Imagens/png-guithub - Logo 2.png" alt="Imagem-Guithub" class="img-guithub"> </a>
-              </div>
-                  <br>
-              <div class="img_texto"> 
-                  <img src="Imagens/email.png" alt="email-logo" class="img_emal"> 
-                  <p class="dados-contato"> paulo.lucio.jr@hotmail.com </p>
-              </div> 
-              <div class="img_texto">
-                  <img src="Imagens/telefone.png" alt="telefone-logo" class="img_fone">
-                  <p class="dados-contato"> (11) 00000-0000 </p>
-              </div>
-              <div class="img_texto">
-                  <img src="Imagens/localização.png" alt="local-logo" class="img_local"> 
-                  <p class="dados-contato"> Osasco-Sp </p>
-              </div>
-          </div>
-
-           
-        
-            <form action="https://formsubmit.co/paulo.lucio.jr@hotmail.com" method="POST">
-              <input type="hidden" name="_next" value="http://127.0.0.1:5500/obrigado.html">  <!-- serve para assim que o formulário for enviado, vai ser direcionado para essa página -->
-                <input type="text" name="name" id="" placeholder="NOME" required> <!-- placeholder - texto que aparece antes de digital algo / required - atributo que faz com que seja obrigatório preencher aquela informação -->
-                <input type="text" name="email" id="" placeholder="EMAIL" required>
-                <textarea name="message" placeholder="MENSAGEM" required></textarea>
-              <div class="botao-enviar"><input type="submit" value="ENVIAR"></div>  <!--input type="submit" (Essa serve para criar um tipo de botão que consiga enviar as informações que foram colocadas no formulário)-->
-            </form>          
       
+
+      <div class="blocos-contatos"> 
+        
+            <div class="area-contatos">     
+                <div class="img_redes_contato">
+                  
+                        <div class="icone_midia-social">
+                          <a href="https://www.linkedin.com/in/pauloluciojr/" target="_blank"> <img src="Imagens/png-Linkedin - Logo.png" alt="Linkedin-Logo" class="img-linkedin"> </a> <!-- target = essa função possibilita ao clicar o link seja aberto em outra página -->
+                          <span class="nome-icone">Linkedin</span>
+                        </div>  
+
+                        <div class="icone_midia-social">
+                          <a href="https://github.com/PauloLucioJr" target="_blank"> <img src="Imagens/png-guithub - Logo 2.png" alt="Imagem-Guithub" class="img-guithub"> </a>
+                          <span class="nome-icone">GitHub</span>
+                        </div>
+                
+                </div>
+            </div>
+          
+        
+           
+          <!-- Formulário)-->
+        
+           <div class="form-box">
+             
+             <form action="https://formsubmit.co/paulo.lucio.jr@hotmail.com" method="POST">
+              
+              
+              <h2 class="texto-contato"> CONTATO </h2>
+            
+               <div class="input-grupo"> 
+                 <input type="hidden" name="_next" value="http://127.0.0.1:5500/obrigado.html">  <!-- serve para assim que o formulário for enviado, vai ser direcionado para essa página -->
+               </div>  
+                 
+               <div class="input-grupo">   
+                 <input type="text" name="_honey" style="display:none">
+               </div>  
+               
+               <div class="input-grupo"> 
+                 <input type="text" name="name" id="" placeholder="Seu Nome" required> <!-- placeholder - texto que aparece antes de digital algo / required - atributo que faz com que seja obrigatório preencher aquela informação -->
+               </div> 
+               
+               <div class="input-grupo"> 
+                 <input type="email" name="email" id="" placeholder="Seu E-mail" required>
+               </div>  
+               <div class="input-grupo"> 
+                 <textarea name="message" id="" placeholder="Mensagem" required></textarea>
+               </div> 
+
+               <div class="botao-enviar">
+                 <input type="submit" value="ENVIAR">   <!--input type="submit" (Essa serve para criar um tipo de botão que consiga enviar as informações que foram colocadas no formulário)-->
+               </div>                
+             </form>  
+             
+          </div>
+      </div>
     </section>
 
   </main>
