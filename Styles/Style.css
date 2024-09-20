@@ -121,11 +121,41 @@ h1 {
 }
 
 .cargos {
+    position: relative;
     color:#99654A;  
     font-family: 'Oswald', sans-serif; 
     font-size: 3rem;   
     font-weight: 600;  
+    border-right: 6px solid #99654A;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;   /* animação até onde vai digitando */
+    animation: piscando .6s step-end infinite, digitando 16s steps(22,end);
 }
+
+@keyframes piscando {
+    50%{
+        border-right-color: transparent;
+    }        
+    
+}
+
+@keyframes digitando {
+    20%{
+        width: 20.7ch;
+    }
+    70%{
+        width: 20.7ch;
+    }
+    85%{
+        width: 0;
+    }
+    100%{
+        width: 0;
+    }
+    
+}
+
 
 .img-para-portifolio {
     display: flex; 
@@ -1058,7 +1088,8 @@ h4 {
    /* outline: 2px solid blue;  */
     display: grid;
     grid-template-columns: 15% 75%;
-    padding: 4% 0%;
+    padding: 4% 0% 8% 0%;
+
 }                                        
 h3 {
     font-size: 1.2rem;
@@ -1066,13 +1097,13 @@ h3 {
 }
 .imagens-experiencia-direita  {
    /* outline: 2px solid grey;  */
-    gap: 30px;
+    gap: 26px;
     padding-top: 0%;       
 }
 
 .imagems-educação_esquerda {
     gap: 30px;     
-    margin-top: 100%;
+    margin-top: 80%;
 } 
 
 .descritivo-educação {
@@ -1082,7 +1113,7 @@ h3 {
 .descritivo-experiencia, .descritivo-educação {
     display: grid;
     /*outline: 2px solid green;   cor da borda da div */
-    gap: 110px;
+    gap: 120px;
 }
 
 
@@ -1130,25 +1161,6 @@ h3 {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-h2 {
-    text-align: center;                  
-    color:white;                       
-    font-family: 'Oswald', sans-serif;  
-    font-size: 2.5rem;                   
-}
-
-
 .lista-habilidades {    
     list-style:none;
     font-size: 110px;
@@ -1168,18 +1180,11 @@ h2 {
 }
 
 
-
 .icone-html5, .icone-css3, .icone-js, .div-wordpress {     /* Blocos cores de fundo */
-    display: flex;    
-    flex-direction: column;
-    width: 132px;
-    height: 132px;    
-    justify-content: center;
-    align-items: center;   
-    padding: 16px;
-      
-    /*outline: 2px solid rgb(197, 185, 10);*/ 
-    
+    width: 42px;
+    height: 42px;    
+    padding: 16px;      
+    /*outline: 2px solid rgb(197, 185, 10);*/     
 }
 
 
@@ -1188,8 +1193,8 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 132px;
-    height: 132px;
+    width: 42px;
+    height: 42px;
     padding: 16px;
     
 }
@@ -1199,49 +1204,47 @@ h2 {
 
 
 .icone-html5:hover {             /* efeito blocos aumentando */
-    transform: scale(1.2);    
+    transform: scale(1);    
 }
 .icone-css3:hover {
-    transform: scale(1.2);
+    transform: scale(1);
 } 
 .icone-js:hover {
-    transform: scale(1.2);
+    transform: scale(1);
 } 
 .div-wordpress:hover {
-    transform: scale(1.2);
+    transform: scale(1);
 } 
 
 .container_joomla:hover, .container_figma:hover {
-    transform: scale(1.2);
-    cursor: pointer;
-    transition: transform 0.8s ease;       
+    transform: scale(1);
+    cursor: none;           
 } 
 
 
 
 .nomes-icones, .nome-icone-figma, .nome-icone-joomla {
-    position: absolute; 
+    position:absolute; 
     align-items: center;  
     color: aliceblue;   
     font-family: 'Oswald', sans-serif;                  
-    font-size: 1.2rem;                                 
+    font-size: 1rem;                                 
     font-weight: 600;  
-    transform: scale(1) ;
-    top: 168px;
+    transform: scale(0) ;
+    top: 350px;
     visibility: hidden;   
-    outline: 2px solid rgb(128, 51, 0);  
-    
+    outline: 2px solid rgb(128, 51, 0);      
 }
 
 
 
 .nome-icone-joomla {
-    top: 148px;   
+    top: 8px;   
     left: 58px;    
 }
 
 .nome-icone-figma{
-    top: 148px;   
+    top: 8px;   
     left: 64px;
 }
 
@@ -1253,51 +1256,32 @@ h2 {
 .div-wordpress:hover .nomes-icones,
 .container_joomla:hover .nome-icone-joomla,
 .container_figma:hover .nome-icone-figma {
-    visibility: visible;
+    visibility: hidden;
 }
 
+  /* Tamanho dos blocos e ícones */
 
 .fa-css3-alt, .fa-js, .fa-wordpress {
     padding: 12px 30px 20px 30px;    
 }
-.img-html5, .img-js {
-    width: 100px;
-    padding-top: 8px;
-}
-.img-css3 {
-    width: 90px;
-    padding-top: 8px;
-}
-.img-wp {
-    width: 114px;
-    padding-top: 8px;
-}
-.img-html5:hover {
-    filter: brightness(0) saturate(100%) invert(34%) sepia(60%) saturate(1970%) hue-rotate(356deg) brightness(90%) contrast(104%);      
-}
-.img-css3:hover {
-    filter: brightness(0) saturate(100%) invert(15%) sepia(98%) saturate(5974%) hue-rotate(221deg) brightness(95%) contrast(102%);   
-}
-.img-js:hover {
-    filter: brightness(0) saturate(100%) invert(84%) sepia(20%) saturate(3552%) hue-rotate(1deg) brightness(107%) contrast(103%);   
-}
-.img-wp:hover {
-    filter: brightness(0) saturate(100%) invert(26%) sepia(85%) saturate(1681%) hue-rotate(170deg) brightness(94%) contrast(101%);   
+.img-html5, .img-css3, .img-js {
+    width: 46px;
+    padding-top: 3px;
 }
 
+.img-wp {
+    width: 54px;
+    padding-top: 3px;
+}
 .div-joomla-color, .div-figma-color {
     position: relative;   
-    top: -150px;
-    padding-left: 20px;
+    top: -108px;
+    padding-left: 8px;
 }
-
-
-
 .img-joomla-color, .img-figma-color {   
-    width: 100px;
+    width: 47px;
     opacity: 1;
-    transition: opacity 0.8s ease, transform 0.8s ease;
-    padding: 16px;     
+    padding: 10px;     
 }
 
 
@@ -1367,6 +1351,8 @@ h2 {
 
 
                                          /* CONTATO */
+
+
 
 /* área do formulário */
 
