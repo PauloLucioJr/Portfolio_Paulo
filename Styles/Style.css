@@ -120,19 +120,21 @@ h1 {
     font-weight: 700;                                   
 }
 
+
 .cargos {
     position: relative;
     color:#99654A;  
     font-family: 'Oswald', sans-serif; 
     font-size: 3rem;   
     font-weight: 600;  
-    border-right: 6px solid #99654A;
+   /* border-right: 6px solid #99654A;
     white-space: nowrap;
     overflow: hidden;
-    width: 0;   /* animação até onde vai digitando */
+    width: 0;    animação até onde vai digitando */
     animation: piscando .6s step-end infinite, digitando 16s steps(22,end);
 }
 
+/*
 @keyframes piscando {
     50%{
         border-right-color: transparent;
@@ -155,7 +157,7 @@ h1 {
     }
     
 }
-
+*/
 
 .img-para-portifolio {
     display: flex; 
@@ -688,11 +690,10 @@ h3 {
 
                                             /* PARTE CONTATO */
 
-                                            
+
                                             
 /* área de contatos */
-
-
+   
 
           
 .blocos-contatos {
@@ -733,7 +734,7 @@ h3 {
 
 .icone_midia-social:hover {
     transform: scale(1.2);
-} 
+}  
 
 
 
@@ -809,8 +810,50 @@ form textarea {
                                                 /* RESPONSIVIDADE */  
 
 
-/* Desktop */                                              
-@media screen and (max-width: 1024px) {    
+/* Note */                                              
+@media screen and (max-width: 1366px) {   
+    
+     /* HOME */
+
+.lista-menu {             
+    gap: 10rem;
+}
+
+.img-perfil { 
+    padding: 0% 0% 4% 0%;                     
+    width: 42%;                     
+}
+
+h1 {
+    font-size: 5rem;                                      
+    font-weight: 700;                                   
+}
+
+
+/* SOBRE MIM */
+
+.corpo_conteudo_sobre_mim {
+    padding: 8% 0% 8% 10%;    
+}
+
+.titulo_sobre_mim {
+    font-size: 3rem; 
+    text-align: left;
+    padding: 0% 0% 4% 0%;    
+}
+
+.texto_sobre_mim {
+    font-size: 1.4rem; 
+    text-align: justify;           
+    padding: 0% 16% 0% 0%;    
+}
+
+.imagem_sobre_mim {
+    width: 60vh;
+    padding-right: 86px;
+}
+
+
 }
 
 
@@ -1294,25 +1337,6 @@ h3 {
 
 
 
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1353,7 +1377,8 @@ h3 {
                                          /* CONTATO */
 
 
-
+                                         
+                                         
 /* área do formulário */
 
 form h2 {
