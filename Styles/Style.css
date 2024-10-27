@@ -1142,8 +1142,8 @@ transform: rotate(135deg);
 .img-perfil {   
     display: flex; 
     align-items: center;
-    width: 80%;             
-    padding: 0% 0% 0% 20%;       
+    width: 88%;             
+    padding: 0% 0% 0% 10%;       
     animation: fadeIn 3s ease-in-out;        
 }
 
@@ -1267,7 +1267,9 @@ h3 {
     gap: 120px;
 }
 
-
+.titulo-experiencia {
+    padding-top: 80px;
+}
 
 
 
@@ -1493,8 +1495,8 @@ form {
 }                
                                             
 form input, form textarea { 
-    width: 190%;   
-    font-size: 11px;        
+    width: 200%;   
+    font-size: 12px;        
 }
                                             
 form textarea {   
