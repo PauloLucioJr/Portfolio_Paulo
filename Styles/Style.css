@@ -1125,7 +1125,7 @@ transform: rotate(135deg);
     display: flex;           
     justify-content: center; 
     align-items: center;
-    outline: 2px solid rgb(0, 113, 128);
+    /*outline: 2px solid rgb(0, 113, 128);*/
 }
 
 
@@ -1134,21 +1134,16 @@ transform: rotate(135deg);
     flex-direction:column; 
     align-items: center;                 
     justify-content: center;          
-    outline: 2px solid rgb(128, 51, 0);    
+ /*   outline: 2px solid rgb(128, 51, 0);    */
 
 }
 
-
-.imgens-perfil {
-    display: flex;   
-    flex-direction: column-reverse;
-}
 
 .img-perfil {   
     display: flex; 
-    align-items: center;                  
+    align-items: center;
     width: 80%;             
-    padding: 0% 0% 8% 24%;       
+    padding: 0% 0% 0% 20%;       
     animation: fadeIn 3s ease-in-out;        
 }
 
@@ -1179,13 +1174,12 @@ h1{
     flex-direction: column;                   
     align-items: center;                 
     justify-content: center;  
-    gap: 16px; 
-    outline: 2px solid rgb(0, 2, 128);  
-    padding: 8px 0px 0px 0px; 
+    padding: 4px 0px 0px 0px; 
+  /*  outline: 2px solid rgb(0, 2, 128);  */
 }
 
 .img-linkedin, .img-guithub {                   
-    width: 5vh; 
+    width: 6vh; 
     margin: 24px 20px 0px 20px;                                 
     padding: 3px;   
     border: 3px solid #0C7979; 
@@ -1195,8 +1189,7 @@ h1{
 .img-redes-sociais {
     display: flex; 
     flex-direction: row;
-    outline: 2px solid rgb(98, 0, 128); 
-
+ /*   outline: 2px solid rgb(98, 0, 128); */
 }
 
 
@@ -1241,21 +1234,22 @@ h2 {
 h4 {    
     font-size: 0.8rem;
 }
+
 .apresentacao_experiencia_educacao {
    /* outline: 2px solid blue;  */
     display: grid;
     grid-template-columns: 15% 75%;
     padding: 4% 0% 8% 0%;
+}    
 
-}                                        
 h3 {
     font-size: 1.2rem;
     /* outline: 2px solid violet; */
 }
 .imagens-experiencia-direita  {
-   /* outline: 2px solid grey;  */
     gap: 26px;
-    padding-top: 0%;       
+    padding-top: 0%;  
+    /* outline: 2px solid grey;  */     
 }
 
 .imagems-educação_esquerda {
@@ -1264,7 +1258,7 @@ h3 {
 } 
 
 .descritivo-educação {
-    margin-top: 16%;
+    margin-top: 18%;
 }
 
 .descritivo-experiencia, .descritivo-educação {
@@ -1300,13 +1294,11 @@ h3 {
     filter: brightness(0) saturate(100%) invert(26%) sepia(85%) saturate(1681%) hue-rotate(170deg) brightness(94%) contrast(101%);   
 }
 
-
-
 .nomes-icones, .nome-icone-figma, .nome-icone-joomla {                   
     font-size: 1.1rem;                                 
     font-weight: 600;  
     bottom: 5px;
-    visibility: visible;      
+    visibility:visible;      
 }
 
 
@@ -1314,17 +1306,12 @@ h3 {
     opacity: 0;
 }
 
-
-
-
-
 .lista-habilidades {    
     list-style:none;
     font-size: 110px;
     color: #000000;
-   /* outline: 2px solid rgb(128, 51, 0); */
     margin-top: 8%; 
-       
+       /* outline: 2px solid rgb(128, 51, 0); */
 }
 
 .lista-habilidades-cima {
@@ -1338,9 +1325,9 @@ h3 {
 
 
 .icone-html5, .icone-css3, .icone-js, .div-wordpress {     /* Blocos cores de fundo */
-    width: 42px;
-    height: 42px;    
-    padding: 16px;      
+    width: 80px;
+    height: 80px;    
+    padding: 0px;      
     /*outline: 2px solid rgb(197, 185, 10);*/     
 }
 
@@ -1350,10 +1337,9 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 42px;
-    height: 42px;
-    padding: 16px;
-    
+    width: 80px;
+    height: 80px;
+    padding: 16px;    
 }
 
 
@@ -1389,7 +1375,7 @@ h3 {
     font-weight: 600;  
     transform: scale(0) ;
     top: 350px;
-    visibility: hidden;   
+    visibility: visible;   
     outline: 2px solid rgb(128, 51, 0);      
 }
 
@@ -1433,16 +1419,19 @@ h3 {
 .div-joomla-color, .div-figma-color {
     position: relative;   
     top: -108px;
-    padding-left: 8px;
+    padding-left: 7px;
 }
 .img-joomla-color, .img-figma-color {   
-    width: 47px;
+    width: 66px;
     opacity: 1;
     padding: 10px;     
 }
 
 
-
+.divisao-horiontal-verde {
+    padding: 4px;   
+    border: none;
+}
 
 
 
@@ -1462,8 +1451,7 @@ h3 {
     width: 328px;    
 }   
 
-.bloco_portfolio_PJ, .bloco_portfolio_wnfitas {
-   
+.bloco_portfolio_PJ, .bloco_portfolio_wnfitas {   
     padding: 0px 16px 20px 16;    
     margin: 4%;
 }
@@ -1471,7 +1459,7 @@ h3 {
 .caixa_protifolios {
     display: flex;
     flex-direction: column;
-    gap: 42px;
+    gap: 40px;
 }
    
 .titulo_port_paulojr, .titulo_port_wnfitas {
@@ -1482,7 +1470,7 @@ h3 {
     width: 46%;        
 }
 .btn-guithub {
-    margin-left: 16px;
+    margin-right: 16px;
 }
 
 
@@ -1505,7 +1493,7 @@ form {
 }                
                                             
 form input, form textarea { 
-    width: 180%;   
+    width: 190%;   
     font-size: 11px;        
 }
                                             
@@ -1516,7 +1504,7 @@ form textarea {
                                      
 .nomes-icones {
     visibility: visible; 
-    padding: 4px 0px 0px 8px;
+    padding: 8px 0px 0px 8px;
 }                                         
                                                     
       
