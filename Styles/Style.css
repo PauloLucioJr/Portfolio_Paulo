@@ -11,14 +11,14 @@
 }
 
 *{                /* Através do (*) eu faço uma seleção geral de todo conteúdo da página */
-    margin: 0px;  /* Aqui eu zero todas as minhas margens externas da página */
+    margin: 0;  /* Aqui eu zero todas as minhas margens externas da página */
     padding: 0;   /* Aqui eu zero todas as minhas margens internas da página */
+    box-sizing: border-box;
 }
 
 body {
     /* height: 100vh;  Significa altura da página (body) e 100vh é 100% de do meta name do arquivo Html */
-    box-sizing: border-box;  
-    background-color: black; 
+    background-color: black;    
 }
 
 
@@ -36,8 +36,7 @@ a {                                      /* Estilização das Palavras do Menu *
     font-family: 'Oswald', sans-serif;                
     text-decoration: none;                           
     font-size: 1.5rem;                                 
-    font-weight: 600;                               
-
+    font-weight: 600;        
 }
 
 a:hover {               
@@ -84,23 +83,38 @@ a:hover {
 
 
 .descritivo-portefoleo {  /* Elemento Pai - Container principal*/
+    height: 100vh;
     display: flex;           
     justify-content: center; 
-    padding: 7%;
+    align-items: center;
+    outline: 2px solid rgb(0, 113, 128);
 }
 
                                         /* PÁGINA CORPO HOME */
-.apresentacao_imagem_cargo {
+.apresentacao-perfil {
     display: flex;   
-    flex-direction: column;              
-    align-items: center;
+    flex-direction: row-reverse;                 
+    gap: 80px;
+    animation: fadeIn 3s ease-in-out;
+   /*  outline: 2px solid rgb(128, 51, 0);   */
 }
 
-.img-perfil {                     
-    width: 50%;             
-    padding: 0% 0% 8% 0%;       
-    animation: fadeIn 3s ease-in-out;        
+.apresentacao_imagem_cargo {
+    display: flex;   
+    flex-direction: column;
+    /*outline: 2px solid rgb(128, 9, 0); */
 }
+
+.img-perfil {  
+    display: none;        
+}
+
+.pj-black {
+    height: 120%;
+    padding-bottom: 200px;
+    animation: fadeIn 3s ease-in-out;
+}
+
 
 @keyframes fadeIn {       /* animação imagem de perfil */
     from {
@@ -112,11 +126,15 @@ a:hover {
 }
 
 
+
+
+
+
 h1 {
     text-align: center;                                     
     color:white;                                          
     font-family: 'Sofia Sans Semi Condensed', sans-serif;  
-    font-size: 5.5rem;                                      
+    font-size: 5rem;                                      
     font-weight: 700;                                   
 }
 
@@ -125,8 +143,8 @@ h1 {
     position: relative;
     color:#99654A;  
     font-family: 'Oswald', sans-serif; 
-    font-size: 3rem;   
-    font-weight: 600;  
+    font-size: 2.8rem;   
+    font-weight: 600; 
    /* border-right: 6px solid #99654A;
     white-space: nowrap;
     overflow: hidden;
@@ -161,20 +179,30 @@ h1 {
 
 .img-para-portifolio {
     display: flex; 
-    flex-direction: row;                   
+    flex-direction: column;                   
     align-items: center;                 
     justify-content: center;  
-    gap: 20px;   
+    gap: 16px; 
+   /* outline: 2px solid rgb(0, 2, 128);      */
 }
 
 .img-linkedin, .img-guithub {                   
-    width: 6vh;                                  
-    padding: 24px 10px 0px 20px;     
+    width: 6vh; 
+    margin: 24px 20px 0px 20px;                                 
+    padding: 3px;   
+    border: 4px solid #0C7979; 
+    border-radius: 50%; 
+}
+
+.img-redes-sociais {
+    display: flex; 
+    flex-direction: row;
+   /* outline: 2px solid rgb(98, 0, 128);  */
 }
 
 .img-para-portifolio a:hover {
     transform: scale(1.1);
-    transition-duration: 0.5s;   
+    transition-duration: 0.5s;       
 }
 
 
@@ -186,7 +214,8 @@ h1 {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 10%;    
+    padding: 8%;   
+    animation: fadeIn 3s ease-in-out; 
 }
 
 .titulo_sobre_mim {
@@ -206,7 +235,7 @@ h1 {
 }
 
 .imagem_sobre_mim {
-    width: 63vh;
+    width: 58vh;
 }
 
 
@@ -217,7 +246,7 @@ h1 {
                                              /* PÁGINA RESUMO */
                                   
 .corpo_conteudo_habilidades {
-    padding-top: 10%;
+    padding-top: 8%;
 }
 
 h2 {
@@ -231,10 +260,9 @@ h2 {
 .lista-habilidades {    
     list-style:none;
     font-size: 110px;
-    color: #000000;
-   /* outline: 2px solid rgb(128, 51, 0); */
-    margin-top: 4%; 
-       
+    color: #000000;   
+    margin-top: 4%;      
+    /* outline: 2px solid rgb(128, 51, 0); */  
 }
 
 .lista-habilidades-cima {
@@ -257,8 +285,8 @@ h2 {
 .icone-html5, .icone-css3, .icone-js, .div-wordpress {     /* Blocos cores de fundo */
     display: flex;    
     flex-direction: column;
-    width: 132px;
-    height: 132px;    
+    width: 136px;
+    height: 136px;    
     justify-content: center;
     align-items: center;   
     padding: 16px;
@@ -267,8 +295,7 @@ h2 {
     border: var(--cor-primaria) solid 4px;
     border-radius: 8px;
     transition: transform 0.8s ease, background-color 0.8s ease;   
-    /*outline: 2px solid rgb(197, 185, 10);*/ 
-    
+    /*outline: 2px solid rgb(197, 185, 10);*/     
 }
 
 
@@ -277,8 +304,8 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 132px;
-    height: 132px;
+    width: 136px;
+    height: 136px;
     padding: 16px;
     background-color: #111111;
     border: var(--cor-primaria) solid 4px;
@@ -320,22 +347,21 @@ h2 {
     font-size: 1.2rem;                                 
     font-weight: 600;  
     transform: scale(1) ;
-    top: 168px;
+    top: 136px;
     visibility: hidden;   
-    outline: 2px solid rgb(128, 51, 0);  
-    
+  /*  outline: 2px solid rgb(128, 51, 0);  */  
 }
 
 
 
 .nome-icone-joomla {
-    top: 148px;   
-    left: 58px;    
+    top: 124px;   
+    left: 38px;    
 }
 
 .nome-icone-figma{
-    top: 148px;   
-    left: 64px;
+    top: 128px;   
+    left: 48px;
 }
 
 
@@ -351,19 +377,19 @@ h2 {
 
 
 .fa-css3-alt, .fa-js, .fa-wordpress {
-    padding: 12px 30px 20px 30px;    
+    padding: 12px 30px 0px 30px;    
 }
 .img-html5, .img-js {
-    width: 100px;
-    padding-top: 8px;
+    width: 98px;
+    padding-top: 0px;
 }
 .img-css3 {
     width: 90px;
-    padding-top: 8px;
+    padding-top: 0px;
 }
 .img-wp {
-    width: 114px;
-    padding-top: 8px;
+    width: 106px;
+    padding-top: 0px;
 }
 .img-html5:hover {
     filter: brightness(0) saturate(100%) invert(34%) sepia(60%) saturate(1970%) hue-rotate(356deg) brightness(90%) contrast(104%);      
@@ -378,19 +404,28 @@ h2 {
     filter: brightness(0) saturate(100%) invert(26%) sepia(85%) saturate(1681%) hue-rotate(170deg) brightness(94%) contrast(101%);   
 }
 
-.div-joomla-color, .div-figma-color {
+.div-joomla-color {
     position: relative;   
-    top: -150px;
-    padding-left: 20px;
+    top: -122px;
+    padding-left: 14px;
 }
 
 
-
 .img-joomla-color, .img-figma-color {   
-    width: 100px;
+    width: 110px;
     opacity: 0;
     transition: opacity 0.8s ease, transform 0.8s ease;
-    padding: 16px;     
+    padding: 8px;     
+}
+
+.img-figma-color {
+    width: 118px;
+}
+
+.div-figma-color {
+    position: relative;   
+    top: -126px;
+    padding-left: 10px;
 }
 
 .img-joomla-color:hover, .img-figma-color:hover {
@@ -546,7 +581,7 @@ h3 {
 
 
 
-                                 /* PARTE PORTFOLIO */
+                                 /* PÁGINA PORTFOLIO */
 .container_portfolio {
     display: flex;
     flex-direction: column;
@@ -636,7 +671,7 @@ h3 {
 }
   
 .btn-guithub {
-    margin-left: 58px;
+    margin-right: 58px;
 }
 
 .efeito-sobrepor {
@@ -689,12 +724,16 @@ h3 {
 
 
                                             /* PARTE CONTATO */
-
-
                                             
 /* área de contatos */
    
 
+.section-contato {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
           
 .blocos-contatos {
     display: flex;    
@@ -766,7 +805,6 @@ form .input-grupo {
 form input, form textarea {  
     width: 280%;    
     background-color: #05050598;
-    border: 0;
     outline: 2px solid var(--cor-terciaria);
     border-radius: 8px;
     padding: 8px 8px 8px 8px;
@@ -792,7 +830,7 @@ form textarea {
 .botao-enviar input:hover {        
     box-shadow: 0px 0px 18px var(--cor-selecao);
     transform: scale(1.05);
-    outline: 3px solid var(--cor-secundaria);
+    outline: 4px solid var(--cor-secundaria);
 }
 
 
@@ -830,7 +868,7 @@ h1 {
 }
 
 
-/* SOBRE MIM */
+                                                  /* SOBRE MIM */
 
 .corpo_conteudo_sobre_mim {
     padding: 8% 0% 8% 10%;    
@@ -1079,8 +1117,55 @@ transform: rotate(135deg);
 }
 
 .descritivo-portefoleo {
-    margin: 16% 0%;
+    margin: 0% 0%;
 }
+
+
+.descritivo-portefoleo {  /* Elemento Pai - Container principal*/
+    display: flex;           
+    justify-content: center; 
+    align-items: center;
+    outline: 2px solid rgb(0, 113, 128);
+}
+
+
+.apresentacao-perfil {
+    display: flex;   
+    flex-direction:column; 
+    align-items: center;                 
+    justify-content: center;          
+    outline: 2px solid rgb(128, 51, 0);    
+
+}
+
+
+.imgens-perfil {
+    display: flex;   
+    flex-direction: column-reverse;
+}
+
+.img-perfil {   
+    display: flex; 
+    align-items: center;                  
+    width: 80%;             
+    padding: 0% 0% 8% 24%;       
+    animation: fadeIn 3s ease-in-out;        
+}
+
+@keyframes fadeIn {       /* animação imagem de perfil */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+.pj-black {
+    display: none;   
+}
+
 
 h1{
     font-size: 3.5rem;
@@ -1089,8 +1174,37 @@ h1{
     font-size: 2rem;
 }
 
+.img-para-portifolio {
+    display: flex; 
+    flex-direction: column;                   
+    align-items: center;                 
+    justify-content: center;  
+    gap: 16px; 
+    outline: 2px solid rgb(0, 2, 128);  
+    padding: 8px 0px 0px 0px; 
+}
 
- 
+.img-linkedin, .img-guithub {                   
+    width: 5vh; 
+    margin: 24px 20px 0px 20px;                                 
+    padding: 3px;   
+    border: 3px solid #0C7979; 
+    border-radius: 50%; 
+}
+
+.img-redes-sociais {
+    display: flex; 
+    flex-direction: row;
+    outline: 2px solid rgb(98, 0, 128); 
+
+}
+
+
+
+
+
+
+
 
                                         /* SOBRE MIM */
 
