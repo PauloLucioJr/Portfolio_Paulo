@@ -961,7 +961,8 @@ h1 {
 
 .section-contato {
     height: 100vh;
-    display: flex;    
+    display: flex;   
+    margin: 6% 0% 4% 0%; 
 }
           
 .blocos-contatos {
