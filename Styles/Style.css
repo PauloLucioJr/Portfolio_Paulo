@@ -961,8 +961,7 @@ h1 {
 
 .section-contato {
     height: 100vh;
-    display: flex;
-    
+    display: flex;    
 }
           
 .blocos-contatos {
@@ -1367,10 +1366,15 @@ h1{
 
                                         /* SOBRE MIM */
 
+.section-contato {
+    height: 100vh;
+    display: flex;    
+}
+
 .corpo_conteudo_sobre_mim {
     padding: 0% 6%;
     gap: 0px;  
-    margin: 12% 0%;                       
+    margin: 36% 0%;                       
 }
 .imagem_sobre_mim {
     width: 34vh;
