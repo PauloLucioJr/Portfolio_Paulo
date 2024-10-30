@@ -87,7 +87,7 @@ a:hover {
     display: flex;           
     justify-content: center; 
     align-items: center;
-    outline: 2px solid rgb(0, 113, 128);
+   /* outline: 2px solid rgb(0, 113, 128);*/
 }
 
                                         /* PÁGINA CORPO HOME */
@@ -210,6 +210,7 @@ h1 {
                                      /* PÁGINA SOBRE MIM */
 
 .corpo_conteudo_sobre_mim {
+    height: 100vh;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -269,15 +270,15 @@ h2 {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 100px;
+    gap: 140px;
 }
 
 .lista-habilidades-baixo {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 100px;
-    margin-top: 100px;
+    gap: 140px;
+    margin-top: 140px;
 }
 
 
@@ -438,20 +439,15 @@ h2 {
 
 
 
-
-
-
-
-
-
-
-
-
 .divisao-horiontal-verde {
     background-color: rgb(0, 81, 82);
     padding: 6px;   
     border: none;
 }
+
+
+
+
 
                                        /* PARTE EXPERIENCIA */
 
@@ -575,9 +571,6 @@ h3 {
 
 
     
-
-
-
 
 
 
@@ -754,7 +747,7 @@ h3 {
     font-family: 'Oswald', sans-serif;                  
     font-size: 1.1rem;                                 
     font-weight: 400;  
-    transform: scale(1) ;
+    transform: scale(1);
     visibility: hidden; 
     text-align: center;
     padding-left: 8px;
@@ -847,6 +840,61 @@ form textarea {
 
                                                 /* RESPONSIVIDADE */  
 
+/* Tela Extra large */ 
+@media screen and (max-width: 1920px) {
+
+    /* HOME */  
+ 
+    .apresentacao-perfil {
+        height: 100vh;
+        display: flex;   
+        flex-direction: row-reverse;   
+        justify-content: center; 
+        align-items: center;         
+        gap: 8px;
+        animation: fadeIn 3s ease-in-out;
+    }
+
+    .pj-black {
+        height: 120%;
+        padding-bottom: 116px;
+        animation: fadeIn 3s ease-in-out;
+    }    
+
+
+
+/* SOBRE */  
+
+    .corpo_conteudo_sobre_mim {
+        height: 100vh;
+        justify-content: center;
+        padding: 14%;   
+        animation: fadeIn 3s ease-in-out; 
+    }
+    
+    .titulo_sobre_mim {
+        color: var(--cor-terciaria);
+        font-family: var(--fonte-primaria); 
+        font-size: 3rem; 
+        text-align: left;
+        padding: 0% 0% 4% 2%;    
+    }
+    
+    .texto_sobre_mim {
+        color: var(--cor-secundaria);
+        font-family: var(--fonte-primaria); 
+        font-size: 1.5rem; 
+        text-align: justify;           
+        padding: 0% 8% 0% 2%;    
+    }
+    
+    .imagem_sobre_mim {
+        width: 58vh;
+    }    
+}
+
+
+
 
 /* Note */                                              
 @media screen and (max-width: 1366px) {   
@@ -857,16 +905,29 @@ form textarea {
     gap: 10rem;
 }
 
-.img-perfil { 
-    padding: 0% 0% 4% 0%;                     
-    width: 42%;                     
-}
-
 h1 {
     font-size: 5rem;                                      
     font-weight: 700;                                   
 }
 
+.pj-black {
+    height: 120%;
+    padding-bottom: 50px;
+    animation: fadeIn 3s ease-in-out;
+}
+
+.apresentacao-perfil {
+    height: 100vh;
+    display: flex;   
+    flex-direction: row-reverse;                 
+    gap: 8px;
+    animation: fadeIn 3s ease-in-out;
+}
+
+.img-para-portifolio {
+    gap: 20px; 
+    padding-left: 100px;
+}   
 
                                                   /* SOBRE MIM */
 
@@ -875,23 +936,130 @@ h1 {
 }
 
 .titulo_sobre_mim {
-    font-size: 3rem; 
+    font-size: 2.4rem; 
     text-align: left;
     padding: 0% 0% 4% 0%;    
 }
 
 .texto_sobre_mim {
-    font-size: 1.4rem; 
+    font-size: 1.2rem; 
     text-align: justify;           
     padding: 0% 16% 0% 0%;    
 }
 
 .imagem_sobre_mim {
-    width: 60vh;
+    width: 68vh;
     padding-right: 86px;
 }
 
 
+                               /* CONTATO */
+
+
+/* área de contatos */
+   
+
+.section-contato {
+    height: 100vh;
+    display: flex;
+    
+}
+          
+.blocos-contatos {
+    display: flex;    
+    align-items: center;
+    flex-direction: column-reverse; 
+          
+}
+
+.img_redes_contato {
+    display: flex;    
+    flex-direction: row;    
+    gap: 20px;
+}
+
+.nome-icone {
+    position: relative;
+    color: aliceblue;   
+    font-family: 'Oswald', sans-serif;                  
+    font-size: 1.1rem;                                 
+    font-weight: 400;  
+    transform: scale(1);
+    visibility: hidden; 
+    text-align: center;
+    padding-left: 8px;
+}
+
+.icone_midia-social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: .4s;
+}
+
+
+
+
+
+
+
+/* área do formulário */
+
+
+
+form h2 {
+    color: var(--cor-terciaria);
+    font-size: var(--fonte-primaria);
+    font-size: 2.4rem;                                      
+    font-weight: 750;   
+    align-items: center;     
+}
+                                                                                 
+form {
+    background-color: #111111;
+    padding: 16px 370px 32px 70px;   
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column; 
+      
+}
+        
+form .input-grupo {
+    margin-bottom: 16px;    
+}
+
+form input, form textarea {  
+    width: 280%;    
+    background-color: #05050598;
+    outline: 2px solid var(--cor-terciaria);
+    border-radius: 8px;
+    padding: 8px 8px 8px 8px;
+    color: var(--cor-secundaria); 
+    font-size: 11px;        
+}
+
+form textarea {   
+    resize: none;         
+    padding-bottom: 120px;              
+}
+
+.botao-enviar input {      
+    width: 100%;
+    padding: 8%; 
+    background-color: var(--cor-terciaria);
+    outline: 3px solid var(--cor-selecao);
+    cursor: pointer;
+    font-weight: 700;  
+    transition: 0.5s;       
+}
+
+.botao-enviar input:hover {        
+    box-shadow: 0px 0px 18px var(--cor-selecao);
+    transform: scale(1.05);
+    outline: 4px solid var(--cor-secundaria);
+}
+
+                             
 }
 
 
@@ -900,9 +1068,8 @@ h1 {
 @media screen and (max-width: 1024px) {
 
                                            /* HOME */
-    .descritivo-portefoleo {
-      padding: 12% 0% 12% 0%;
-    }
+
+                                          
     .lista-menu {
       gap: 80px;        
     }
@@ -940,7 +1107,6 @@ h1 {
         padding: 38px 2px;
         margin: 0px 80px 0px 130px;    
     }
-
 
 }
 
@@ -1382,7 +1548,6 @@ h3 {
 }
 
 
-
 .nome-icone-joomla {
     top: 8px;   
     left: 58px;    
@@ -1443,10 +1608,6 @@ h3 {
 
 
 
-
-
-
-
                                          /* PORTFÓLIO */
                                     
 .img-portfolio, .img-portfolio-wnfitas {
@@ -1480,9 +1641,7 @@ h3 {
 
                                          /* CONTATO */
 
-
-                                         
-                                         
+                                       
 /* área do formulário */
 
 form h2 {
